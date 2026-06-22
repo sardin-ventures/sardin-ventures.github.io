@@ -595,17 +595,14 @@ h3 {
   }
 }
 
-@media (min-width: 1120px) {
-  .studio-home .hero-inner {
-    --hero-logo-space: clamp(230px, 18vw, 300px);
-    padding-left: var(--hero-logo-space);
-  }
-
+@media (min-width: 1440px) {
   .studio-home .hero-studio-mark {
-    --hero-mark-width: clamp(220px, 16vw, 270px);
+    --hero-content-width: min(calc(100vw - 32px), var(--max-width));
+    --hero-gutter: calc((100vw - var(--hero-content-width)) / 2);
+    --hero-mark-width: clamp(80px, calc(var(--hero-gutter) - 48px), 220px);
     display: block;
     position: absolute;
-    left: 0;
+    left: calc(-1 * var(--hero-mark-width) - 24px);
     bottom: 4px;
     width: var(--hero-mark-width);
     height: auto;
