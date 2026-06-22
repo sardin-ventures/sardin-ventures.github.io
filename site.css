@@ -33,6 +33,7 @@ body {
   color: var(--white);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   line-height: 1.55;
+  overflow-x: hidden;
 }
 
 body::before {
@@ -151,13 +152,12 @@ h3,
 }
 
 .ohjata-hero::before {
-  background:
+  background-image:
     linear-gradient(90deg, rgba(6, 6, 7, 0.92), rgba(6, 6, 7, 0.54) 58%, rgba(6, 6, 7, 0.86)),
     linear-gradient(0deg, rgba(6, 6, 7, 0.98), rgba(6, 6, 7, 0.24) 40%, rgba(6, 6, 7, 0.6)),
-    linear-gradient(rgba(56, 201, 219, 0.10) 2px, transparent 2px),
-    linear-gradient(90deg, rgba(252, 212, 54, 0.08) 2px, transparent 2px),
-    #171519;
-  background-size: auto, auto, 26px 26px, 26px 26px, auto;
+    url("ohjata/assets/ohjata-header.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .hero::after {
@@ -216,6 +216,7 @@ h1 {
   font-size: clamp(18px, 2.2vw, 27px);
   font-weight: 800;
   line-height: 1.25;
+  overflow-wrap: break-word;
   text-shadow: 0 3px 16px rgba(0, 0, 0, 0.75);
 }
 
@@ -322,6 +323,10 @@ h3 {
   margin-top: 28px;
 }
 
+.hero-actions {
+  margin-top: 32px;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -359,6 +364,113 @@ h3 {
   color: var(--black);
 }
 
+.detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
+  gap: 28px;
+  align-items: start;
+}
+
+.detail-copy p:not(.eyebrow) {
+  max-width: 780px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  overflow-wrap: break-word;
+}
+
+.facts-panel,
+.feature-card,
+.screenshot-card {
+  border: 2px solid var(--line);
+  background: rgba(23, 21, 25, 0.92);
+  box-shadow: 8px 8px 0 var(--shadow);
+}
+
+.facts-panel {
+  padding: 22px;
+}
+
+.facts-list {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+}
+
+.facts-list div {
+  display: grid;
+  grid-template-columns: 120px minmax(0, 1fr);
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 2px solid rgba(235, 229, 214, 0.12);
+}
+
+.facts-list div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.facts-list dt,
+.facts-list dd {
+  margin: 0;
+}
+
+.facts-list dt {
+  color: var(--yellow);
+  font-family: "Press Start 2P", ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 9px;
+  line-height: 1.6;
+}
+
+.facts-list dd {
+  color: var(--white);
+  font-size: 15px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.feature-card {
+  padding: 22px;
+}
+
+.feature-card h3 {
+  min-height: 56px;
+  font-size: 13px;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.screenshot-card {
+  display: block;
+  overflow: hidden;
+}
+
+.screenshot-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  transition: transform 160ms ease;
+}
+
+.screenshot-card:hover img,
+.screenshot-card:focus-visible img {
+  transform: scale(1.025);
+}
+
 .site-footer {
   padding: 36px 0;
   color: var(--muted);
@@ -380,7 +492,10 @@ h3 {
 
   .nav-links,
   .section-title,
-  .game-grid {
+  .game-grid,
+  .detail-grid,
+  .feature-grid,
+  .screenshot-grid {
     flex-wrap: wrap;
     grid-template-columns: 1fr;
   }
@@ -395,11 +510,31 @@ h3 {
     min-height: 680px;
   }
 
+  .hero-copy {
+    max-width: 30ch;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
   .button {
     width: 100%;
   }
 
   .game-copy {
     padding: 18px;
+  }
+
+  .detail-copy p:not(.eyebrow),
+  .feature-card p {
+    font-size: 15px;
+  }
+
+  .facts-list div {
+    grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
