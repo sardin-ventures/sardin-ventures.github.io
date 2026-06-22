@@ -4,6 +4,12 @@
   src: url("runz/assets/fonts/PressStart2P-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "VG5000";
+  src: url("assets/fonts/VG5000-Regular.otf") format("opentype");
+}
+
 :root {
   color-scheme: dark;
   --black: #060607;
@@ -14,6 +20,7 @@
   --yellow: #fcd436;
   --lime: #80c747;
   --cyan: #38c9db;
+  --studio-pink: #d94a73;
   --line: rgba(235, 229, 214, 0.22);
   --shadow: rgba(0, 0, 0, 0.42);
   --max-width: 1180px;
@@ -89,18 +96,6 @@ img {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 2px solid var(--white);
-  background: var(--red);
-  color: var(--white);
-  font-family: "Press Start 2P", ui-monospace, SFMono-Regular, Consolas, monospace;
-  font-size: 9px;
-}
-
 .brand span:last-child,
 .eyebrow,
 h1,
@@ -113,6 +108,24 @@ h3,
 
 .brand span:last-child {
   font-size: 13px;
+}
+
+.studio-brand {
+  color: var(--studio-pink);
+}
+
+.studio-logo-mark {
+  width: 34px;
+  height: 46px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.studio-brand span:last-child {
+  color: var(--studio-pink);
+  font-family: "VG5000", ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 18px;
+  line-height: 1;
 }
 
 .nav-links {
