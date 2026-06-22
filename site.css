@@ -213,6 +213,7 @@ h3,
 }
 
 .studio-home .hero-inner {
+  position: relative;
   padding: 72px 0 34px;
 }
 
@@ -253,6 +254,10 @@ h1 {
 .studio-home .section-title h2 {
   font-family: "VG5000", ui-monospace, SFMono-Regular, Consolas, monospace;
   font-weight: 400;
+}
+
+.hero-studio-mark {
+  display: none;
 }
 
 .studio-home .hero h1 {
@@ -587,6 +592,21 @@ h3 {
 
   .section-title {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1440px) {
+  .studio-home .hero-studio-mark {
+    --hero-mark-width: clamp(96px, 7vw, 120px);
+    display: block;
+    position: absolute;
+    left: calc(-1 * var(--hero-mark-width) - 8px);
+    bottom: 28px;
+    width: var(--hero-mark-width);
+    height: auto;
+    filter: drop-shadow(6px 6px 0 rgba(92, 43, 105, 0.48));
+    image-rendering: pixelated;
+    pointer-events: none;
   }
 }
 
