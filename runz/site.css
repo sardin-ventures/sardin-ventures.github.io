@@ -79,6 +79,10 @@ img {
   max-width: 100%;
 }
 
+.home-logo {
+  display: none !important;
+}
+
 .site-header {
   position: sticky;
   top: 0;
