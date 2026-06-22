@@ -455,20 +455,21 @@ h3 {
 }
 
 .screenshot-card {
-  display: block;
+  display: grid;
+  place-items: center;
   overflow: hidden;
+  aspect-ratio: 16 / 9;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+    #060607;
+  background-size: 8px 8px, 8px 8px, auto;
 }
 
 .screenshot-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  transition: transform 160ms ease;
-}
-
-.screenshot-card:hover img,
-.screenshot-card:focus-visible img {
-  transform: scale(1.025);
+  height: 100%;
+  object-fit: contain;
 }
 
 .site-footer {
