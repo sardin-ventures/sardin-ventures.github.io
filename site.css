@@ -155,6 +155,10 @@ h3,
   overflow: clip;
 }
 
+.studio-home .hero {
+  min-height: min(340px, 48svh);
+}
+
 .hero::before {
   position: absolute;
   inset: 0;
@@ -205,6 +209,10 @@ h3,
   padding: 120px 0 52px;
 }
 
+.studio-home .hero-inner {
+  padding: 72px 0 34px;
+}
+
 .eyebrow {
   display: inline-flex;
   margin: 0 0 22px;
@@ -237,19 +245,11 @@ h1 {
   text-shadow: 0 3px 16px rgba(0, 0, 0, 0.75);
 }
 
-.studio-home .eyebrow,
 .studio-home .hero h1,
 .studio-home .hero-copy,
 .studio-home .section-title h2 {
   font-family: "VG5000", ui-monospace, SFMono-Regular, Consolas, monospace;
   font-weight: 400;
-}
-
-.studio-home .eyebrow {
-  border-color: var(--studio-pink);
-  color: var(--studio-pink);
-  font-size: 15px;
-  text-transform: lowercase;
 }
 
 .studio-home .hero h1 {
@@ -260,6 +260,7 @@ h1 {
 
 .studio-home .hero-copy {
   max-width: 18ch;
+  margin-top: 18px;
   color: #f3e9ee;
   font-size: clamp(26px, 4.1vw, 52px);
   font-weight: 400;
@@ -593,6 +594,10 @@ h3 {
 @media (max-width: 620px) {
   .hero {
     min-height: 680px;
+  }
+
+  .studio-home .hero {
+    min-height: 360px;
   }
 
   .studio-home .hero::before {
