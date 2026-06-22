@@ -595,16 +595,21 @@ h3 {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1120px) {
+  .studio-home .hero-inner {
+    --hero-logo-space: clamp(230px, 18vw, 300px);
+    padding-left: var(--hero-logo-space);
+  }
+
   .studio-home .hero-studio-mark {
-    --hero-mark-width: clamp(96px, 7vw, 120px);
+    --hero-mark-width: clamp(220px, 16vw, 270px);
     display: block;
     position: absolute;
-    left: calc(-1 * var(--hero-mark-width) - 8px);
-    bottom: 28px;
+    left: 0;
+    bottom: 4px;
     width: var(--hero-mark-width);
     height: auto;
-    filter: drop-shadow(6px 6px 0 rgba(92, 43, 105, 0.48));
+    filter: drop-shadow(9px 9px 0 rgba(92, 43, 105, 0.46));
     image-rendering: pixelated;
     pointer-events: none;
   }
