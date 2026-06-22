@@ -331,14 +331,14 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 46px;
-  padding: 13px 16px;
+  min-height: 34px;
+  padding: 8px 13px;
   border: 2px solid var(--white);
   background: var(--panel);
   color: var(--white);
-  box-shadow: 6px 6px 0 var(--shadow);
+  box-shadow: 4px 4px 0 var(--shadow);
   font-size: 10px;
-  line-height: 1.45;
+  line-height: 1.2;
   text-align: center;
   text-decoration: none;
   transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease, color 120ms ease;
@@ -349,7 +349,7 @@ h3 {
   border-color: var(--yellow);
   color: var(--yellow);
   transform: translate(-2px, -2px);
-  box-shadow: 8px 8px 0 var(--shadow);
+  box-shadow: 6px 6px 0 var(--shadow);
 }
 
 .button.primary {
