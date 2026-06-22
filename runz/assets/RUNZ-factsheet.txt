@@ -1,0 +1,43 @@
+RUNZ FACTSHEET
+Last updated: June 22, 2026
+
+Game: RUNZ
+Developer: sardin-ventures
+Publisher: sardin-ventures
+Genre: Top-down roguelite arena shooter
+Players: Single-player
+Engine: Godot 4.6.2
+Status: Public demo available. Full game coming soon.
+Platforms: Steam demo for Windows, macOS, and Linux. itch.io builds for HTML5, Windows, macOS, and Linux.
+Price: Demo free. Full-game price TBA.
+
+Steam: https://store.steampowered.com/app/4704420/runz/
+itch.io: https://srdnvntrz.itch.io/runz
+YouTube: https://www.youtube.com/@sardin-ventures/featured
+TikTok: https://www.tiktok.com/@sardinventures
+Discord: https://discord.gg/5Zy9YzUEvS
+
+Press contact: TODO - add a direct public email before sending outreach.
+
+One-sentence pitch:
+RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters.
+
+Short description:
+Blast through escalating waves, earn money, reroll the shop, combine 3-of-a-kind bullets, and turn your magazine into a ridiculous combo engine.
+
+Long description:
+RUNZ is a top-down roguelite arena shooter built around readable bullet composition. Between timed combat rounds, players rebuild a magazine from shop bullets, 3-of-a-kind star upgrades, and equipped mods, then test that build against denser waves.
+
+The hook is direct: your magazine is the build. Every slot changes what fires next, which synergies activate, and how the run survives. A run starts small, then snowballs through shop rerolls, bullet merges, tag synergies, and mod rules that can make the screen spiral out of control.
+
+Feature bullets:
+- Fast top-down arena survival
+- Shop-driven magazine building between waves
+- 3-of-a-kind bullet star upgrades
+- Tag synergies inspired by TFT and SNKRX
+- Equipped mods that reshape how a run plays
+- Over 70 bullets with different stats, tags, and effects
+- Public demo available on Steam, with prototype builds on itch.io
+
+Creator permission:
+Creators may stream, record, clip, review, and monetize RUNZ gameplay videos. No embargo is active unless sardin-ventures states one directly in writing.
