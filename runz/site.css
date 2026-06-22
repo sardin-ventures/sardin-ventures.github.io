@@ -408,8 +408,18 @@ h3 {
 
 .media-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.media-group-title {
+  margin: 34px 0 16px;
+  color: var(--cyan);
+}
+
+.section-title + .media-group-title {
+  margin-top: 0;
 }
 
 .media-card {
@@ -420,18 +430,27 @@ h3 {
 }
 
 .media-card.featured {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.media-card a {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-bottom: 2px solid rgba(235, 229, 214, 0.13);
+  background: #050506;
 }
 
 .media-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
 }
 
 .media-card figcaption {
-  min-height: 52px;
+  min-height: 74px;
   padding: 12px 14px;
   color: var(--muted);
   font-size: 14px;
