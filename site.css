@@ -156,7 +156,7 @@ h3,
 }
 
 .studio-home .hero {
-  min-height: min(340px, 48svh);
+  min-height: min(420px, 58svh);
 }
 
 .hero::before {
@@ -214,7 +214,10 @@ h3,
 
 .studio-home .hero-inner {
   position: relative;
-  padding: 72px 0 34px;
+  display: grid;
+  justify-items: center;
+  padding: 48px 0 40px;
+  text-align: center;
 }
 
 .eyebrow {
@@ -257,20 +260,27 @@ h1 {
 }
 
 .hero-studio-mark {
-  display: none;
+  display: block;
+  width: clamp(118px, 13vw, 180px);
+  height: clamp(138px, 15.3vw, 210px);
+  margin: 0 0 12px;
+  filter: drop-shadow(8px 8px 0 rgba(92, 43, 105, 0.44));
+  image-rendering: pixelated;
+  object-fit: cover;
+  object-position: top center;
 }
 
 .studio-home .hero h1 {
-  font-size: clamp(48px, 11vw, 138px);
+  font-size: clamp(44px, 8vw, 104px);
   line-height: 0.88;
   text-shadow: 5px 5px 0 rgba(217, 74, 115, 0.54), 10px 10px 0 rgba(92, 43, 105, 0.58);
 }
 
 .studio-home .hero-copy {
   max-width: 24ch;
-  margin-top: 18px;
+  margin-top: 14px;
   color: #f3e9ee;
-  font-size: clamp(26px, 4.1vw, 52px);
+  font-size: clamp(24px, 3.3vw, 42px);
   font-weight: 400;
   line-height: 0.96;
   text-shadow: 4px 4px 0 rgba(92, 43, 105, 0.62), 0 4px 22px rgba(0, 0, 0, 0.8);
@@ -595,30 +605,13 @@ h3 {
   }
 }
 
-@media (min-width: 1440px) {
-  .studio-home .hero-studio-mark {
-    --hero-content-width: min(calc(100vw - 32px), var(--max-width));
-    --hero-gutter: calc((100vw - var(--hero-content-width)) / 2);
-    --hero-mark-width: clamp(80px, calc(var(--hero-gutter) - 48px), 220px);
-    display: block;
-    position: absolute;
-    left: calc(-1 * var(--hero-mark-width) - 24px);
-    bottom: 4px;
-    width: var(--hero-mark-width);
-    height: auto;
-    filter: drop-shadow(9px 9px 0 rgba(92, 43, 105, 0.46));
-    image-rendering: pixelated;
-    pointer-events: none;
-  }
-}
-
 @media (max-width: 620px) {
   .hero {
     min-height: 680px;
   }
 
   .studio-home .hero {
-    min-height: 360px;
+    min-height: 420px;
   }
 
   .studio-home .hero::before {
@@ -629,6 +622,15 @@ h3 {
     max-width: 30ch;
     font-size: 16px;
     line-height: 1.35;
+  }
+
+  .studio-home .hero h1 {
+    font-size: clamp(30px, 9vw, 38px);
+  }
+
+  .studio-home .hero-studio-mark {
+    width: 112px;
+    height: 132px;
   }
 
   h2 {
