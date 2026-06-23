@@ -1,0 +1,16 @@
+# ---------------------------------------------------------------------------
+# This repo is PUBLIC and is served by GitHub Pages. Keep editor tooling OUT.
+#
+# The live site needs only the runtime text layer, which stays tracked:
+#   - the data-edit="…" attributes in the page HTML
+#   - content.js   (fetches and applies content.json)
+#   - content.json (the editor's output — the text the site shows)
+#
+# Everything below is local-only build/agent tooling and must not be published.
+# ---------------------------------------------------------------------------
+/editor/
+/.agents/
+/.claude/
+
+# OS cruft
+.DS_Store

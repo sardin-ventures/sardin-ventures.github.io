@@ -18,18 +18,18 @@
     <link rel="icon" href="/runz/assets/runz-icon.png">
     <link rel="stylesheet" href="/site.css?v=2026-mono-11">
   </head>
-  <body>
+  <body data-page="runz">
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="/" aria-label="srdnvntrz home">
           <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
-          <span>srdnvntrz</span>
+          <span data-edit="brand">srdnvntrz</span>
         </a>
         <div class="nav-links">
-          <a href="#overview">Overview</a>
-          <a href="#facts">Facts</a>
-          <a href="#media">Screenshots</a>
-          <a href="#downloads">Downloads</a>
+          <a href="#overview" data-edit="nav.overview">Overview</a>
+          <a href="#facts" data-edit="nav.facts">Facts</a>
+          <a href="#media" data-edit="nav.media">Screenshots</a>
+          <a href="#downloads" data-edit="nav.downloads">Downloads</a>
         </div>
       </nav>
     </header>
@@ -39,14 +39,14 @@
         <span class="enemy" data-enemy="bomber" data-cell="5" style="top:92px; right:6%;" aria-hidden="true"></span>
         <span class="enemy" data-enemy="skitter" data-cell="4" style="top:214px; right:15%;" aria-hidden="true"></span>
         <div class="hero-inner">
-          <p class="eyebrow">Press Kit</p>
-          <h1 id="hero-title">RUNZ</h1>
-          <p class="hero-lead">A top-down roguelite arena shooter where every bullet in your magazine matters.</p>
+          <p class="eyebrow" data-edit="hero.eyebrow">Press Kit</p>
+          <h1 id="hero-title" data-edit="hero.title">RUNZ</h1>
+          <p class="hero-lead" data-edit="hero.lead">A top-down roguelite arena shooter where every bullet in your magazine matters.</p>
           <div class="actions" aria-label="Primary links">
-            <a class="button primary" href="https://store.steampowered.com/app/4704420/runz/" rel="noopener" target="_blank">Steam Demo</a>
-            <a class="button" href="https://srdnvntrz.itch.io/runz" rel="noopener" target="_blank">itch.io Builds</a>
-            <a class="button" href="/runz/assets/RUNZ-creator-kit.zip">Download Kit</a>
-            <a class="button" href="https://discord.gg/5Zy9YzUEvS" rel="noopener" target="_blank">Discord</a>
+            <a class="button primary" href="https://store.steampowered.com/app/4704420/runz/" rel="noopener" target="_blank" data-edit="hero.btn.steam">Steam Demo</a>
+            <a class="button" href="https://srdnvntrz.itch.io/runz" rel="noopener" target="_blank" data-edit="hero.btn.itch">itch.io Builds</a>
+            <a class="button" href="/runz/assets/RUNZ-creator-kit.zip" data-edit="hero.btn.kit">Download Kit</a>
+            <a class="button" href="https://discord.gg/5Zy9YzUEvS" rel="noopener" target="_blank" data-edit="hero.btn.discord">Discord</a>
           </div>
         </div>
       </section>
@@ -55,28 +55,28 @@
         <span class="enemy" data-enemy="predictor" data-cell="4" style="top:16%; right:5%;" aria-hidden="true"></span>
         <div class="section-inner">
           <div class="split">
-            <h2 class="lead-statement" id="overview-title">Your magazine <span class="hl">is the build.</span></h2>
+            <h2 class="lead-statement" id="overview-title" data-edit="overview.title">Your magazine <span class="hl">is the build.</span></h2>
             <div>
               <div class="prose">
-                <p>Survive twenty rounds. Between each one you're in the shop, rebuilding a twelve-slot magazine out of whatever you can afford — raw bullets, three-of-a-kind fused into starred upgrades, mods bolted on top — then you drop back into the arena and find out if it holds.</p>
-                <p>There's no separate loadout screen. The magazine <strong>is</strong> the build, and it's only ever as good as your last trip to the shop.</p>
+                <p data-edit="overview.p1">Survive twenty rounds. Between each one you're in the shop, rebuilding a twelve-slot magazine out of whatever you can afford — raw bullets, three-of-a-kind fused into starred upgrades, mods bolted on top — then you drop back into the arena and find out if it holds.</p>
+                <p data-edit="overview.p2">There's no separate loadout screen. The magazine <strong>is</strong> the build, and it's only ever as good as your last trip to the shop.</p>
               </div>
               <ul class="features">
-                <li>20-round survival run structure</li>
-                <li>Economy management</li>
-                <li>Collect 3 copies of the same bullet to upgrade it</li>
-                <li>Auto-battler style synergy</li>
-                <li>Mods that can radically change how you approach your run</li>
+                <li data-edit="overview.feature.0">20-round survival run structure</li>
+                <li data-edit="overview.feature.1">Economy management</li>
+                <li data-edit="overview.feature.2">Collect 3 copies of the same bullet to upgrade it</li>
+                <li data-edit="overview.feature.3">Auto-battler style synergy</li>
+                <li data-edit="overview.feature.4">Mods that can radically change how you approach your run</li>
               </ul>
               <div class="tags" aria-label="Steam tags">
-                <span class="tag">Action</span>
-                <span class="tag">Twin Stick Shooter</span>
-                <span class="tag">Bullet Hell</span>
-                <span class="tag">Roguelite</span>
-                <span class="tag">Action Roguelike</span>
-                <span class="tag">Pixel Graphics</span>
-                <span class="tag">Top-Down</span>
-                <span class="tag">Singleplayer</span>
+                <span class="tag" data-edit="overview.tag.0">Action</span>
+                <span class="tag" data-edit="overview.tag.1">Twin Stick Shooter</span>
+                <span class="tag" data-edit="overview.tag.2">Bullet Hell</span>
+                <span class="tag" data-edit="overview.tag.3">Roguelite</span>
+                <span class="tag" data-edit="overview.tag.4">Action Roguelike</span>
+                <span class="tag" data-edit="overview.tag.5">Pixel Graphics</span>
+                <span class="tag" data-edit="overview.tag.6">Top-Down</span>
+                <span class="tag" data-edit="overview.tag.7">Singleplayer</span>
               </div>
             </div>
           </div>
@@ -86,26 +86,26 @@
       <section class="section" id="facts" aria-labelledby="facts-title">
         <div class="section-inner">
           <div class="section-head">
-            <h2 id="facts-title">Quick Facts</h2>
-            <p>Specs, links, and press copy — all copy-paste ready.</p>
+            <h2 id="facts-title" data-edit="facts.title">Quick Facts</h2>
+            <p data-edit="facts.sub">Specs, links, and press copy — all copy-paste ready.</p>
           </div>
           <dl class="specs">
-            <div class="spec"><dt>Game</dt><dd>RUNZ</dd></div>
-            <div class="spec"><dt>Developer</dt><dd>sardin-ventures</dd></div>
-            <div class="spec"><dt>Publisher</dt><dd>sardin-ventures</dd></div>
-            <div class="spec"><dt>Genre</dt><dd>Top-down roguelite arena shooter</dd></div>
-            <div class="spec"><dt>Platform</dt><dd>Steam: Windows, macOS, Linux. itch.io: HTML5, Windows, macOS, Linux.</dd></div>
-            <div class="spec"><dt>Players</dt><dd>Single-player</dd></div>
-            <div class="spec"><dt>Status</dt><dd>Public demo available. Full game coming soon.</dd></div>
-            <div class="spec"><dt>Price</dt><dd>Demo free. Full-game price TBA.</dd></div>
-            <div class="spec"><dt>Release</dt><dd>Coming soon</dd></div>
-            <div class="spec"><dt>Engine</dt><dd>Godot 4.6.2</dd></div>
-            <div class="spec"><dt>Steam</dt><dd><a href="https://store.steampowered.com/app/4704420/runz/" rel="noopener" target="_blank">store.steampowered.com/app/4704420/runz</a></dd></div>
-            <div class="spec"><dt>itch.io</dt><dd><a href="https://srdnvntrz.itch.io/runz" rel="noopener" target="_blank">srdnvntrz.itch.io/runz</a></dd></div>
-            <div class="spec"><dt>YouTube</dt><dd><a href="https://www.youtube.com/@sardin-ventures/featured" rel="noopener" target="_blank">@sardin-ventures</a></dd></div>
-            <div class="spec"><dt>TikTok</dt><dd><a href="https://www.tiktok.com/@sardinventures" rel="noopener" target="_blank">@sardinventures</a></dd></div>
-            <div class="spec"><dt>Discord</dt><dd><a href="https://discord.gg/5Zy9YzUEvS" rel="noopener" target="_blank">discord.gg/5Zy9YzUEvS</a></dd></div>
-            <div class="spec"><dt>Press Copy</dt><dd><a href="/runz/RUNZ-press-copy.md">RUNZ-press-copy.md</a></dd></div>
+            <div class="spec"><dt data-edit="facts.spec.0.dt">Game</dt><dd data-edit="facts.spec.0.dd">RUNZ</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.1.dt">Developer</dt><dd data-edit="facts.spec.1.dd">sardin-ventures</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.2.dt">Publisher</dt><dd data-edit="facts.spec.2.dd">sardin-ventures</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.3.dt">Genre</dt><dd data-edit="facts.spec.3.dd">Top-down roguelite arena shooter</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.4.dt">Platform</dt><dd data-edit="facts.spec.4.dd">Steam: Windows, macOS, Linux. itch.io: HTML5, Windows, macOS, Linux.</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.5.dt">Players</dt><dd data-edit="facts.spec.5.dd">Single-player</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.6.dt">Status</dt><dd data-edit="facts.spec.6.dd">Public demo available. Full game coming soon.</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.7.dt">Price</dt><dd data-edit="facts.spec.7.dd">Demo free. Full-game price TBA.</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.8.dt">Release</dt><dd data-edit="facts.spec.8.dd">Coming soon</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.9.dt">Engine</dt><dd data-edit="facts.spec.9.dd">Godot 4.6.2</dd></div>
+            <div class="spec"><dt data-edit="facts.spec.10.dt">Steam</dt><dd data-edit="facts.spec.10.dd"><a href="https://store.steampowered.com/app/4704420/runz/" rel="noopener" target="_blank">store.steampowered.com/app/4704420/runz</a></dd></div>
+            <div class="spec"><dt data-edit="facts.spec.11.dt">itch.io</dt><dd data-edit="facts.spec.11.dd"><a href="https://srdnvntrz.itch.io/runz" rel="noopener" target="_blank">srdnvntrz.itch.io/runz</a></dd></div>
+            <div class="spec"><dt data-edit="facts.spec.12.dt">YouTube</dt><dd data-edit="facts.spec.12.dd"><a href="https://www.youtube.com/@sardin-ventures/featured" rel="noopener" target="_blank">@sardin-ventures</a></dd></div>
+            <div class="spec"><dt data-edit="facts.spec.13.dt">TikTok</dt><dd data-edit="facts.spec.13.dd"><a href="https://www.tiktok.com/@sardinventures" rel="noopener" target="_blank">@sardinventures</a></dd></div>
+            <div class="spec"><dt data-edit="facts.spec.14.dt">Discord</dt><dd data-edit="facts.spec.14.dd"><a href="https://discord.gg/5Zy9YzUEvS" rel="noopener" target="_blank">discord.gg/5Zy9YzUEvS</a></dd></div>
+            <div class="spec"><dt data-edit="facts.spec.15.dt">Press Copy</dt><dd data-edit="facts.spec.15.dd"><a href="/runz/RUNZ-press-copy.md">RUNZ-press-copy.md</a></dd></div>
           </dl>
         </div>
       </section>
@@ -114,10 +114,10 @@
         <span class="enemy" data-enemy="warden" data-cell="4" style="top:9%; right:4%;" aria-hidden="true"></span>
         <div class="section-inner">
           <div class="section-head">
-            <h2 id="media-title">Screenshots</h2>
-            <p>Grab anything here for coverage — 1080p, straight from the demo build.</p>
+            <h2 id="media-title" data-edit="media.title">Screenshots</h2>
+            <p data-edit="media.sub">Grab anything here for coverage — 1080p, straight from the demo build.</p>
           </div>
-          <h3 class="media-group-title">In the arena</h3>
+          <h3 class="media-group-title" data-edit="media.group.0">In the arena</h3>
           <div class="media-grid">
             <figure class="media-card">
               <a href="/runz/assets/screenshots/combat-late.jpg">
@@ -135,7 +135,7 @@
               </a>
             </figure>
           </div>
-          <h3 class="media-group-title">Between rounds</h3>
+          <h3 class="media-group-title" data-edit="media.group.1">Between rounds</h3>
           <div class="media-grid">
             <figure class="media-card">
               <a href="/runz/assets/screenshots/shop.jpg">
@@ -159,24 +159,24 @@
       <section class="section" id="creators" aria-labelledby="creators-title">
         <div class="section-inner">
           <div class="section-head">
-            <h2 id="creators-title">Creator Notes</h2>
-            <p>What you can do with RUNZ on stream, and what to disclose.</p>
+            <h2 id="creators-title" data-edit="creators.title">Creator Notes</h2>
+            <p data-edit="creators.sub">What you can do with RUNZ on stream, and what to disclose.</p>
           </div>
           <div class="col-grid">
             <article class="col">
-              <h3>Coverage</h3>
-              <p>Creators may stream, record, clip, review, and monetize RUNZ gameplay videos.</p>
-              <p>No embargo is active unless we state one directly in writing.</p>
+              <h3 data-edit="creators.col.0.h">Coverage</h3>
+              <p data-edit="creators.col.0.p0">Creators may stream, record, clip, review, and monetize RUNZ gameplay videos.</p>
+              <p data-edit="creators.col.0.p1">No embargo is active unless we state one directly in writing.</p>
             </article>
             <article class="col">
-              <h3>Best Hook</h3>
-              <p>Build a strange magazine, push it through a wave, then reroll into a stronger synergy or a broken mod combo.</p>
-              <p>Good first-run angle: can this build survive 20 rounds?</p>
+              <h3 data-edit="creators.col.1.h">Best Hook</h3>
+              <p data-edit="creators.col.1.p0">Build a strange magazine, push it through a wave, then reroll into a stronger synergy or a broken mod combo.</p>
+              <p data-edit="creators.col.1.p1">Good first-run angle: can this build survive 20 rounds?</p>
             </article>
             <article class="col">
-              <h3>Disclosure</h3>
-              <p>If you receive a free key or early build, please disclose that connection according to your platform and local rules.</p>
-              <p>The public demo is free to cover.</p>
+              <h3 data-edit="creators.col.2.h">Disclosure</h3>
+              <p data-edit="creators.col.2.p0">If you receive a free key or early build, please disclose that connection according to your platform and local rules.</p>
+              <p data-edit="creators.col.2.p1">The public demo is free to cover.</p>
             </article>
           </div>
         </div>
@@ -185,41 +185,41 @@
       <section class="section" id="downloads" aria-labelledby="downloads-title">
         <div class="section-inner">
           <div class="section-head">
-            <h2 id="downloads-title">Downloads</h2>
-            <p>The kit ZIP, paste-ready pitch text, and a factsheet.</p>
+            <h2 id="downloads-title" data-edit="downloads.title">Downloads</h2>
+            <p data-edit="downloads.sub">The kit ZIP, paste-ready pitch text, and a factsheet.</p>
           </div>
           <div class="downloads-grid">
             <div class="downloads">
-              <h3>Creator Kit ZIP</h3>
-              <p>The ZIP bundles the RUNZ icon, splash image, demo badge, and a full set of high-res screenshots.</p>
+              <h3 data-edit="downloads.kit.h">Creator Kit ZIP</h3>
+              <p data-edit="downloads.kit.p">The ZIP bundles the RUNZ icon, splash image, demo badge, and a full set of high-res screenshots.</p>
               <div class="actions">
-                <a class="button primary" href="/runz/assets/RUNZ-creator-kit.zip">Download ZIP</a>
-                <a class="button" href="/runz/RUNZ-press-copy.md">Press Copy</a>
-                <a class="button" href="/runz/assets/RUNZ-factsheet.txt">Factsheet</a>
+                <a class="button primary" href="/runz/assets/RUNZ-creator-kit.zip" data-edit="downloads.kit.btn.0">Download ZIP</a>
+                <a class="button" href="/runz/RUNZ-press-copy.md" data-edit="downloads.kit.btn.1">Press Copy</a>
+                <a class="button" href="/runz/assets/RUNZ-factsheet.txt" data-edit="downloads.kit.btn.2">Factsheet</a>
               </div>
               <ul>
-                <li>High-resolution PNG screenshots</li>
-                <li>RUNZ icon and splash image</li>
-                <li>Steam, itch.io, Discord, YouTube, and TikTok links</li>
-                <li>Copy-paste pitch, facts, and creator permission</li>
+                <li data-edit="downloads.kit.li.0">High-resolution PNG screenshots</li>
+                <li data-edit="downloads.kit.li.1">RUNZ icon and splash image</li>
+                <li data-edit="downloads.kit.li.2">Steam, itch.io, Discord, YouTube, and TikTok links</li>
+                <li data-edit="downloads.kit.li.3">Copy-paste pitch, facts, and creator permission</li>
               </ul>
             </div>
             <div class="copy-blocks" aria-label="Copy blocks">
               <div class="copy-block">
-                <span class="copy-label">One Sentence</span>
-                <p class="copy-text">RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters.</p>
+                <span class="copy-label" data-edit="downloads.copy.0.label">One Sentence</span>
+                <p class="copy-text" data-edit="downloads.copy.0.text">RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters.</p>
               </div>
               <div class="copy-block">
-                <span class="copy-label">Short Description</span>
-                <p class="copy-text">Blast through escalating waves, earn money, reroll the shop, combine 3-of-a-kind bullets, and turn your magazine into a ridiculous combo engine.</p>
+                <span class="copy-label" data-edit="downloads.copy.1.label">Short Description</span>
+                <p class="copy-text" data-edit="downloads.copy.1.text">Blast through escalating waves, earn money, reroll the shop, combine 3-of-a-kind bullets, and turn your magazine into a ridiculous combo engine.</p>
               </div>
               <div class="copy-block">
-                <span class="copy-label">Genre Line</span>
-                <p class="copy-text">Top-down roguelite arena shooter with shop-driven magazine builds and tag synergies.</p>
+                <span class="copy-label" data-edit="downloads.copy.2.label">Genre Line</span>
+                <p class="copy-text" data-edit="downloads.copy.2.text">Top-down roguelite arena shooter with shop-driven magazine builds and tag synergies.</p>
               </div>
               <div class="copy-block">
-                <span class="copy-label">Creator Permission</span>
-                <p class="copy-text">Creators may stream, record, clip, review, and monetize RUNZ gameplay videos.</p>
+                <span class="copy-label" data-edit="downloads.copy.3.label">Creator Permission</span>
+                <p class="copy-text" data-edit="downloads.copy.3.text">Creators may stream, record, clip, review, and monetize RUNZ gameplay videos.</p>
               </div>
             </div>
           </div>
@@ -229,15 +229,16 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-meta">Last updated June 22, 2026 · RUNZ is developed and published by sardin-ventures.</p>
+        <p class="footer-meta" data-edit="footer.meta">Last updated June 22, 2026 · RUNZ is developed and published by sardin-ventures.</p>
         <span class="enemy" data-enemy="spitter" data-cell="3" style="left:46%; top:-34px;" aria-hidden="true"></span>
         <a class="footer-brand" href="/" aria-label="srdnvntrz home">
-          <span>srdnvntrz</span>
+          <span data-edit="brand">srdnvntrz</span>
           <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
         </a>
       </div>
     </footer>
     <script src="/lightbox.js?v=2026-mono-12" defer></script>
     <script src="/enemies.js?v=2026-mono-11" defer></script>
+    <script src="/content.js?v=2026-edit-1" defer></script>
   </body>
 </html>

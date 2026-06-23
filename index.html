@@ -12,17 +12,17 @@
     <link rel="icon" href="/assets/srdnvntrz-logo.png">
     <link rel="stylesheet" href="/site.css?v=2026-mono-11">
   </head>
-  <body class="studio-home">
+  <body class="studio-home" data-page="home">
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="/" aria-label="srdnvntrz home">
           <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
-          <span>srdnvntrz</span>
+          <span data-edit="brand">srdnvntrz</span>
         </a>
         <div class="nav-links">
-          <a href="https://www.youtube.com/@sardin-ventures/featured" rel="noopener" target="_blank">YouTube</a>
-          <a href="https://www.tiktok.com/@sardinventures" rel="noopener" target="_blank">TikTok</a>
-          <a href="https://discord.gg/5Zy9YzUEvS" rel="noopener" target="_blank">Discord</a>
+          <a href="https://www.youtube.com/@sardin-ventures/featured" rel="noopener" target="_blank" data-edit="nav.youtube">YouTube</a>
+          <a href="https://www.tiktok.com/@sardinventures" rel="noopener" target="_blank" data-edit="nav.tiktok">TikTok</a>
+          <a href="https://discord.gg/5Zy9YzUEvS" rel="noopener" target="_blank" data-edit="nav.discord">Discord</a>
         </div>
       </nav>
     </header>
@@ -33,33 +33,33 @@
       <span class="enemy" data-enemy="splitter" data-cell="5" data-angle="0" style="top:36%; right:9%;" aria-hidden="true"></span>
       <span class="enemy" data-enemy="spitter" data-cell="4" data-angle="-90" style="top:48%; right:25%;" aria-hidden="true"></span>
       <div class="home-wordmark">
-        <p class="eyebrow">Independent game studio</p>
-        <h1>SARDIN<span class="line2">VENTURES</span></h1>
-        <p class="home-tagline">Two brothers<span class="pin"> · </span>making games.</p>
+        <p class="eyebrow" data-edit="hero.eyebrow">Independent game studio</p>
+        <h1 data-edit="hero.title">SARDIN<span class="line2">VENTURES</span></h1>
+        <p class="home-tagline" data-edit="hero.tagline">Two brothers<span class="pin"> · </span>making games.</p>
       </div>
 
       <ol class="game-index">
         <li>
           <a class="game-row" href="/runz/">
-            <span class="idx">01</span>
+            <span class="idx" data-edit="games.0.idx">01</span>
             <img class="thumb" src="/runz/assets/runz-header.jpg" alt="RUNZ key art" width="460" height="215">
             <span class="game-row-copy">
-              <h2>RUNZ</h2>
-              <p>A roguelite arena shooter where your magazine is the whole build.</p>
+              <h2 data-edit="games.0.title">RUNZ</h2>
+              <p data-edit="games.0.desc">A roguelite arena shooter where your magazine is the whole build.</p>
             </span>
-            <span class="status">Public demo</span>
+            <span class="status" data-edit="games.0.status">Public demo</span>
             <span class="game-arrow" aria-hidden="true">→</span>
           </a>
         </li>
         <li>
           <a class="game-row" href="/ohjata/">
-            <span class="idx">02</span>
+            <span class="idx" data-edit="games.1.idx">02</span>
             <img class="thumb" src="/ohjata/assets/ohjata-header.jpg" alt="OHJATA key art" width="460" height="215">
             <span class="game-row-copy">
-              <h2>OHJATA</h2>
-              <p>A survivors-like where you steer the shot instead of just firing it.</p>
+              <h2 data-edit="games.1.title">OHJATA</h2>
+              <p data-edit="games.1.desc">A survivors-like where you steer the shot instead of just firing it.</p>
             </span>
-            <span class="status">On Steam</span>
+            <span class="status" data-edit="games.1.status">On Steam</span>
             <span class="game-arrow" aria-hidden="true">→</span>
           </a>
         </li>
@@ -68,13 +68,14 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-meta">© 2026 sardin-ventures — brothers making games.</p>
+        <p class="footer-meta" data-edit="footer.meta">© 2026 sardin-ventures — brothers making games.</p>
         <a class="footer-brand" href="/" aria-label="srdnvntrz home">
-          <span>srdnvntrz</span>
+          <span data-edit="brand">srdnvntrz</span>
           <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
         </a>
       </div>
     </footer>
     <script src="/enemies.js?v=2026-mono-11" defer></script>
+    <script src="/content.js?v=2026-edit-1" defer></script>
   </body>
 </html>

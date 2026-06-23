@@ -18,17 +18,17 @@
     <link rel="icon" href="/assets/srdnvntrz-logo.png">
     <link rel="stylesheet" href="/site.css?v=2026-mono-11">
   </head>
-  <body>
+  <body data-page="ohjata">
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
         <a class="brand" href="/" aria-label="srdnvntrz home">
           <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
-          <span>srdnvntrz</span>
+          <span data-edit="brand">srdnvntrz</span>
         </a>
         <div class="nav-links">
-          <a href="#overview">Overview</a>
-          <a href="#features">Features</a>
-          <a href="#media">Screenshots</a>
+          <a href="#overview" data-edit="nav.overview">Overview</a>
+          <a href="#features" data-edit="nav.features">Features</a>
+          <a href="#media" data-edit="nav.media">Screenshots</a>
         </div>
       </nav>
     </header>
@@ -38,12 +38,12 @@
         <span class="enemy" data-enemy="drifter" data-cell="5" style="top:96px; right:6%;" aria-hidden="true"></span>
         <span class="enemy" data-enemy="gem_shard" data-cell="4" style="top:216px; right:16%;" aria-hidden="true"></span>
         <div class="hero-inner">
-          <p class="eyebrow">Available on Steam</p>
-          <h1 id="hero-title">OHJATA</h1>
-          <p class="hero-lead">Redirect your weapon, collect upgrades, gather gems, and push deeper into a volcanic map.</p>
+          <p class="eyebrow" data-edit="hero.eyebrow">Available on Steam</p>
+          <h1 id="hero-title" data-edit="hero.title">OHJATA</h1>
+          <p class="hero-lead" data-edit="hero.lead">Redirect your weapon, collect upgrades, gather gems, and push deeper into a volcanic map.</p>
           <div class="actions" aria-label="Primary links">
-            <a class="button primary" href="https://store.steampowered.com/app/3280340/Ohjata/" rel="noopener" target="_blank">Open Steam</a>
-            <a class="button" href="#media">Screenshots</a>
+            <a class="button primary" href="https://store.steampowered.com/app/3280340/Ohjata/" rel="noopener" target="_blank" data-edit="hero.btn.steam">Open Steam</a>
+            <a class="button" href="#media" data-edit="hero.btn.media">Screenshots</a>
           </div>
         </div>
       </section>
@@ -52,21 +52,21 @@
         <span class="enemy" data-enemy="splitter" data-cell="4" style="top:16%; right:5%;" aria-hidden="true"></span>
         <div class="section-inner">
           <div class="split">
-            <h2 class="lead-statement" id="overview-title">A redirect-first <span class="hl">survivors-like.</span></h2>
+            <h2 class="lead-statement" id="overview-title" data-edit="overview.title">A redirect-first <span class="hl">survivors-like.</span></h2>
             <div class="prose">
-              <p>Ohjata is a released Action/Indie game built around a unique <strong>redirect mechanic</strong>: steer your projectile through the arena instead of just firing it.</p>
-              <p>Upgrades, synergies, gems, and a hand-crafted volcanic map turn each attempt into a different shape — and each death into a choice about what to risk.</p>
+              <p data-edit="overview.p1">Ohjata is a released Action/Indie game built around a unique <strong>redirect mechanic</strong>: steer your projectile through the arena instead of just firing it.</p>
+              <p data-edit="overview.p2">Upgrades, synergies, gems, and a hand-crafted volcanic map turn each attempt into a different shape — and each death into a choice about what to risk.</p>
             </div>
           </div>
           <dl class="specs">
-            <div class="spec"><dt>Status</dt><dd>Released on Steam</dd></div>
-            <div class="spec"><dt>Release date</dt><dd>Jan 24, 2025</dd></div>
-            <div class="spec"><dt>Developer</dt><dd>Paul Sardin, Théo Sardin</dd></div>
-            <div class="spec"><dt>Publisher</dt><dd>Paul Sardin, Théo Sardin</dd></div>
-            <div class="spec"><dt>Genre</dt><dd>Action, Indie</dd></div>
-            <div class="spec"><dt>Platform</dt><dd>Windows</dd></div>
-            <div class="spec"><dt>Features</dt><dd>Single-player, Steam Cloud, Family Sharing</dd></div>
-            <div class="spec"><dt>Steam</dt><dd><a href="https://store.steampowered.com/app/3280340/Ohjata/" rel="noopener" target="_blank">store.steampowered.com/app/3280340/Ohjata</a></dd></div>
+            <div class="spec"><dt data-edit="overview.spec.0.dt">Status</dt><dd data-edit="overview.spec.0.dd">Released on Steam</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.1.dt">Release date</dt><dd data-edit="overview.spec.1.dd">Jan 24, 2025</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.2.dt">Developer</dt><dd data-edit="overview.spec.2.dd">Paul Sardin, Théo Sardin</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.3.dt">Publisher</dt><dd data-edit="overview.spec.3.dd">Paul Sardin, Théo Sardin</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.4.dt">Genre</dt><dd data-edit="overview.spec.4.dd">Action, Indie</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.5.dt">Platform</dt><dd data-edit="overview.spec.5.dd">Windows</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.6.dt">Features</dt><dd data-edit="overview.spec.6.dd">Single-player, Steam Cloud, Family Sharing</dd></div>
+            <div class="spec"><dt data-edit="overview.spec.7.dt">Steam</dt><dd data-edit="overview.spec.7.dd"><a href="https://store.steampowered.com/app/3280340/Ohjata/" rel="noopener" target="_blank">store.steampowered.com/app/3280340/Ohjata</a></dd></div>
           </dl>
         </div>
       </section>
@@ -74,25 +74,25 @@
       <section class="section" id="features" aria-labelledby="features-title">
         <div class="section-inner">
           <div class="section-head">
-            <h2 id="features-title">Steam Features</h2>
-            <p>Feature names follow the official Steam page.</p>
+            <h2 id="features-title" data-edit="features.title">Steam Features</h2>
+            <p data-edit="features.sub">Feature names follow the official Steam page.</p>
           </div>
           <div class="col-grid col-grid--2">
             <article class="col">
-              <h3>Redirect Your Weapon</h3>
-              <p>Master the weapon redirect mechanic, improve it during a run, and avoid losing the projectile to walls or off-screen reloads.</p>
+              <h3 data-edit="features.col.0.h">Redirect Your Weapon</h3>
+              <p data-edit="features.col.0.p">Master the weapon redirect mechanic, improve it during a run, and avoid losing the projectile to walls or off-screen reloads.</p>
             </article>
             <article class="col">
-              <h3>Upgrade Through The Run</h3>
-              <p>Level-up choices can reshape a build through weapon upgrades, stat buffs, synergies, random events, and relics.</p>
+              <h3 data-edit="features.col.1.h">Upgrade Through The Run</h3>
+              <p data-edit="features.col.1.p">Level-up choices can reshape a build through weapon upgrades, stat buffs, synergies, random events, and relics.</p>
             </article>
             <article class="col">
-              <h3>Gems</h3>
-              <p>Gems can be gathered during runs, spent on powerful mods, dropped on death, and recovered or secured through deposit boxes.</p>
+              <h3 data-edit="features.col.2.h">Gems</h3>
+              <p data-edit="features.col.2.p">Gems can be gathered during runs, spent on powerful mods, dropped on death, and recovered or secured through deposit boxes.</p>
             </article>
             <article class="col">
-              <h3>Handcrafted Map</h3>
-              <p>Explore a volcanic landscape, push through harder eras, solve puzzles, read lore, and search for secret bosses.</p>
+              <h3 data-edit="features.col.3.h">Handcrafted Map</h3>
+              <p data-edit="features.col.3.p">Explore a volcanic landscape, push through harder eras, solve puzzles, read lore, and search for secret bosses.</p>
             </article>
           </div>
         </div>
@@ -101,8 +101,8 @@
       <section class="section" id="media" aria-labelledby="media-title">
         <div class="section-inner">
           <div class="section-head">
-            <h2 id="media-title">Screenshots</h2>
-            <p>Official Steam screenshots.</p>
+            <h2 id="media-title" data-edit="media.title">Screenshots</h2>
+            <p data-edit="media.sub">Official Steam screenshots.</p>
           </div>
           <div class="screenshot-grid">
             <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-01.jpg">
@@ -130,15 +130,16 @@
 
     <footer class="site-footer">
       <div class="footer-inner">
-        <p class="footer-meta">OHJATA is developed by Paul Sardin &amp; Théo Sardin.</p>
+        <p class="footer-meta" data-edit="footer.meta">OHJATA is developed by Paul Sardin &amp; Théo Sardin.</p>
         <span class="enemy" data-enemy="gem_cluster" data-cell="3" style="left:46%; top:-36px;" aria-hidden="true"></span>
         <a class="footer-brand" href="/" aria-label="srdnvntrz home">
-          <span>srdnvntrz</span>
+          <span data-edit="brand">srdnvntrz</span>
           <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
         </a>
       </div>
     </footer>
     <script src="/lightbox.js?v=2026-mono-12" defer></script>
     <script src="/enemies.js?v=2026-mono-11" defer></script>
+    <script src="/content.js?v=2026-edit-1" defer></script>
   </body>
 </html>
