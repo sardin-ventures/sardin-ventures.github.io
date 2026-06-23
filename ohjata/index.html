@@ -6,148 +6,122 @@
     <title>OHJATA | sardin-ventures</title>
     <meta
       name="description"
-      content="OHJATA is a released Action/Indie survivors-inspired rogue-like on Steam by Paul Sardin and Theo Sardin."
+      content="OHJATA is a released Action/Indie redirect-first survivors-like on Steam by Paul Sardin and Théo Sardin."
     >
     <meta property="og:title" content="OHJATA | sardin-ventures">
     <meta
       property="og:description"
       content="Redirect your weapon, gather upgrades and gems, and explore a volcanic map in OHJATA."
     >
-    <meta property="og:image" content="assets/ohjata-header.jpg">
+    <meta property="og:image" content="https://sardin-ventures.github.io/ohjata/assets/ohjata-header.jpg">
     <meta property="og:type" content="website">
-    <link rel="icon" href="../runz/assets/runz-icon.png">
-    <link rel="stylesheet" href="../site.css?v=20260622-2">
+    <link rel="icon" href="/assets/srdnvntrz-logo.png">
+    <link rel="stylesheet" href="/site.css?v=2026-mono-11">
   </head>
   <body>
     <header class="site-header">
       <nav class="nav" aria-label="Primary">
-        <a class="brand studio-brand" href="../" aria-label="srdnvntrz home">
-          <img class="studio-logo-mark" src="../assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
+        <a class="brand" href="/" aria-label="srdnvntrz home">
+          <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
           <span>srdnvntrz</span>
         </a>
+        <div class="nav-links">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#media">Screenshots</a>
+        </div>
       </nav>
     </header>
 
-    <main>
+    <main id="top">
       <section class="hero ohjata-hero" aria-labelledby="hero-title">
+        <span class="enemy" data-enemy="drifter" data-cell="5" style="top:96px; right:6%;" aria-hidden="true"></span>
+        <span class="enemy" data-enemy="gem_shard" data-cell="4" style="top:216px; right:16%;" aria-hidden="true"></span>
         <div class="hero-inner">
-          <p class="eyebrow">AVAILABLE ON STEAM</p>
+          <p class="eyebrow">Available on Steam</p>
           <h1 id="hero-title">OHJATA</h1>
-          <p class="hero-copy">
-            Redirect your weapon, collect upgrades, gather gems, and push deeper into a volcanic map.
-          </p>
-          <div class="actions hero-actions">
+          <p class="hero-lead">Redirect your weapon, collect upgrades, gather gems, and push deeper into a volcanic map.</p>
+          <div class="actions" aria-label="Primary links">
             <a class="button primary" href="https://store.steampowered.com/app/3280340/Ohjata/" rel="noopener" target="_blank">Open Steam</a>
-            <a class="button" href="#screenshots">Screenshots</a>
+            <a class="button" href="#media">Screenshots</a>
           </div>
         </div>
       </section>
 
-      <section class="section" aria-labelledby="about-title">
-        <div class="section-inner detail-grid">
-          <div class="detail-copy">
-            <p class="eyebrow">STEAM SUMMARY</p>
-            <h2 id="about-title">A redirect-first survivors-like</h2>
-            <p>
-              Ohjata is a released Action/Indie game built around a unique redirect mechanic, run upgrades, build synergies, gems, and a hand-crafted volcanic map.
-            </p>
-          </div>
-          <aside class="facts-panel" aria-label="Ohjata facts">
-            <dl class="facts-list">
-              <div>
-                <dt>Status</dt>
-                <dd>Released on Steam</dd>
-              </div>
-              <div>
-                <dt>Release date</dt>
-                <dd>Jan 24, 2025</dd>
-              </div>
-              <div>
-                <dt>Developer</dt>
-                <dd>Paul Sardin, Théo Sardin</dd>
-              </div>
-              <div>
-                <dt>Publisher</dt>
-                <dd>Paul Sardin, Théo Sardin</dd>
-              </div>
-              <div>
-                <dt>Genre</dt>
-                <dd>Action, Indie</dd>
-              </div>
-              <div>
-                <dt>Platform</dt>
-                <dd>Windows</dd>
-              </div>
-              <div>
-                <dt>Features</dt>
-                <dd>Single-player, Steam Cloud, Family Sharing</dd>
-              </div>
-            </dl>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="features-title">
+      <section class="section" id="overview" aria-labelledby="overview-title">
+        <span class="enemy" data-enemy="splitter" data-cell="4" style="top:16%; right:5%;" aria-hidden="true"></span>
         <div class="section-inner">
-          <div class="section-title">
+          <div class="split">
+            <h2 class="lead-statement" id="overview-title">A redirect-first <span class="hl">survivors-like.</span></h2>
+            <div class="prose">
+              <p>Ohjata is a released Action/Indie game built around a unique <strong>redirect mechanic</strong>: steer your projectile through the arena instead of just firing it.</p>
+              <p>Upgrades, synergies, gems, and a hand-crafted volcanic map turn each attempt into a different shape — and each death into a choice about what to risk.</p>
+            </div>
+          </div>
+          <dl class="specs">
+            <div class="spec"><dt>Status</dt><dd>Released on Steam</dd></div>
+            <div class="spec"><dt>Release date</dt><dd>Jan 24, 2025</dd></div>
+            <div class="spec"><dt>Developer</dt><dd>Paul Sardin, Théo Sardin</dd></div>
+            <div class="spec"><dt>Publisher</dt><dd>Paul Sardin, Théo Sardin</dd></div>
+            <div class="spec"><dt>Genre</dt><dd>Action, Indie</dd></div>
+            <div class="spec"><dt>Platform</dt><dd>Windows</dd></div>
+            <div class="spec"><dt>Features</dt><dd>Single-player, Steam Cloud, Family Sharing</dd></div>
+            <div class="spec"><dt>Steam</dt><dd><a href="https://store.steampowered.com/app/3280340/Ohjata/" rel="noopener" target="_blank">store.steampowered.com/app/3280340/Ohjata</a></dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section" id="features" aria-labelledby="features-title">
+        <div class="section-inner">
+          <div class="section-head">
             <h2 id="features-title">Steam Features</h2>
             <p>Feature names follow the official Steam page.</p>
           </div>
-
-          <div class="feature-grid">
-            <article class="feature-card">
-              <h3>REDIRECT YOUR WEAPON</h3>
-              <p>
-                Master the weapon redirect mechanic, improve it during a run, and avoid losing the projectile to walls or off-screen reloads.
-              </p>
+          <div class="col-grid col-grid--2">
+            <article class="col">
+              <h3>Redirect Your Weapon</h3>
+              <p>Master the weapon redirect mechanic, improve it during a run, and avoid losing the projectile to walls or off-screen reloads.</p>
             </article>
-            <article class="feature-card">
-              <h3>UPGRADE THROUGH THE RUN</h3>
-              <p>
-                Level-up choices can reshape a build through weapon upgrades, stat buffs, synergies, random events, and relics.
-              </p>
+            <article class="col">
+              <h3>Upgrade Through The Run</h3>
+              <p>Level-up choices can reshape a build through weapon upgrades, stat buffs, synergies, random events, and relics.</p>
             </article>
-            <article class="feature-card">
-              <h3>GEMS</h3>
-              <p>
-                Gems can be gathered during runs, spent on powerful mods, dropped on death, and recovered or secured through deposit boxes.
-              </p>
+            <article class="col">
+              <h3>Gems</h3>
+              <p>Gems can be gathered during runs, spent on powerful mods, dropped on death, and recovered or secured through deposit boxes.</p>
             </article>
-            <article class="feature-card">
-              <h3>HANDCRAFTED MAP</h3>
-              <p>
-                Explore a volcanic landscape, push through harder eras, solve puzzles, read lore, and search for secret bosses.
-              </p>
+            <article class="col">
+              <h3>Handcrafted Map</h3>
+              <p>Explore a volcanic landscape, push through harder eras, solve puzzles, read lore, and search for secret bosses.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section" id="screenshots" aria-labelledby="screenshots-title">
+      <section class="section" id="media" aria-labelledby="media-title">
         <div class="section-inner">
-          <div class="section-title">
-            <h2 id="screenshots-title">Screenshots</h2>
+          <div class="section-head">
+            <h2 id="media-title">Screenshots</h2>
             <p>Official Steam screenshots.</p>
           </div>
-
           <div class="screenshot-grid">
-            <a class="screenshot-card" href="assets/screenshots/ohjata-01.jpg">
-              <img src="assets/screenshots/ohjata-01.jpg" alt="Ohjata official Steam screenshot 1." width="1920" height="1080">
+            <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-01.jpg">
+              <img src="/ohjata/assets/screenshots/ohjata-01.jpg" alt="Ohjata official Steam screenshot 1." width="1920" height="1080">
             </a>
-            <a class="screenshot-card" href="assets/screenshots/ohjata-02.jpg">
-              <img src="assets/screenshots/ohjata-02.jpg" alt="Ohjata official Steam screenshot 2." width="1920" height="1080">
+            <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-02.jpg">
+              <img loading="lazy" src="/ohjata/assets/screenshots/ohjata-02.jpg" alt="Ohjata official Steam screenshot 2." width="1920" height="1080">
             </a>
-            <a class="screenshot-card" href="assets/screenshots/ohjata-03.jpg">
-              <img src="assets/screenshots/ohjata-03.jpg" alt="Ohjata official Steam screenshot 3." width="1920" height="1080">
+            <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-03.jpg">
+              <img loading="lazy" src="/ohjata/assets/screenshots/ohjata-03.jpg" alt="Ohjata official Steam screenshot 3." width="1920" height="1080">
             </a>
-            <a class="screenshot-card" href="assets/screenshots/ohjata-04.jpg">
-              <img src="assets/screenshots/ohjata-04.jpg" alt="Ohjata official Steam screenshot 4." width="1920" height="1080">
+            <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-04.jpg">
+              <img loading="lazy" src="/ohjata/assets/screenshots/ohjata-04.jpg" alt="Ohjata official Steam screenshot 4." width="1920" height="1080">
             </a>
-            <a class="screenshot-card" href="assets/screenshots/ohjata-05.jpg">
-              <img src="assets/screenshots/ohjata-05.jpg" alt="Ohjata official Steam screenshot 5." width="1920" height="1080">
+            <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-05.jpg">
+              <img loading="lazy" src="/ohjata/assets/screenshots/ohjata-05.jpg" alt="Ohjata official Steam screenshot 5." width="1920" height="1080">
             </a>
-            <a class="screenshot-card" href="assets/screenshots/ohjata-06.jpg">
-              <img src="assets/screenshots/ohjata-06.jpg" alt="Ohjata official Steam screenshot 6." width="1920" height="1080">
+            <a class="screenshot-card" href="/ohjata/assets/screenshots/ohjata-06.jpg">
+              <img loading="lazy" src="/ohjata/assets/screenshots/ohjata-06.jpg" alt="Ohjata official Steam screenshot 6." width="1920" height="1080">
             </a>
           </div>
         </div>
@@ -155,11 +129,16 @@
     </main>
 
     <footer class="site-footer">
-      <p>srdnvntrz.</p>
-      <a class="footer-brand" href="../" aria-label="srdnvntrz home">
-        <img src="../assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
-        <span>srdnvntrz</span>
-      </a>
+      <div class="footer-inner">
+        <p class="footer-meta">OHJATA is developed by Paul Sardin &amp; Théo Sardin.</p>
+        <span class="enemy" data-enemy="gem_cluster" data-cell="3" style="left:46%; top:-36px;" aria-hidden="true"></span>
+        <a class="footer-brand" href="/" aria-label="srdnvntrz home">
+          <span>srdnvntrz</span>
+          <img src="/assets/srdnvntrz-logo.png" alt="" width="852" height="1128">
+        </a>
+      </div>
     </footer>
+    <script src="/lightbox.js?v=2026-mono-12" defer></script>
+    <script src="/enemies.js?v=2026-mono-11" defer></script>
   </body>
 </html>
