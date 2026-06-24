@@ -121,12 +121,12 @@
     "nav.media": "Screenshots",
     "hero.eyebrow": "Available on Steam",
     "hero.title": "OHJATA",
-    "hero.lead": "Redirect your weapon, collect upgrades, gather gems, and push deeper into a volcanic map.",
+    "hero.lead": "Redirect your weapon and collect upgrades to break the game and find its secrets",
     "hero.btn.steam": "Open Steam",
     "hero.btn.media": "Screenshots",
-    "overview.title": "A redirect-first <span class=\"hl\">survivors-like.</span>",
-    "overview.p1": "Ohjata is a released Action/Indie game built around a unique <strong>redirect mechanic</strong>: steer your projectile through the arena instead of just firing it.",
-    "overview.p2": "Upgrades, synergies, gems, and a hand-crafted volcanic map turn each attempt into a different shape — and each death into a choice about what to risk.",
+    "overview.title": "A redirect-first <span class=\"hl\">roguelite.</span>",
+    "overview.p1": "Ohjata is an action-roguelite game built around a unique <strong>redirect mechanic</strong>: steer your projectile through the arena instead of just firing it.",
+    "overview.p2": "Collect upgrades that synergizes, and explore a hand-crafted map each attempt.",
     "overview.spec.0.dt": "Status",
     "overview.spec.0.dd": "Released on Steam",
     "overview.spec.1.dt": "Release date",
@@ -144,17 +144,19 @@
     "overview.spec.7.dt": "Steam",
     "overview.spec.7.dd": "<a href=\"https://store.steampowered.com/app/3280340/Ohjata/\" rel=\"noopener\" target=\"_blank\">store.steampowered.com/app/3280340/Ohjata</a>",
     "features.title": "Steam Features",
-    "features.sub": "Feature names follow the official Steam page.",
     "features.col.0.h": "Redirect Your Weapon",
     "features.col.0.p": "Master the weapon redirect mechanic, improve it during a run, and avoid losing the projectile to walls or off-screen reloads.",
     "features.col.1.h": "Upgrade Through The Run",
     "features.col.1.p": "Level-up choices can reshape a build through weapon upgrades, stat buffs, synergies, random events, and relics.",
-    "features.col.2.h": "Gems",
-    "features.col.2.p": "Gems can be gathered during runs, spent on powerful mods, dropped on death, and recovered or secured through deposit boxes.",
+    "features.col.2.h": "Meta-progression",
+    "features.col.2.p": "Use crazy run modifiers to push your runs further.",
     "features.col.3.h": "Handcrafted Map",
-    "features.col.3.p": "Explore a volcanic landscape, push through harder eras, solve puzzles, read lore, and search for secret bosses.",
+    "features.col.3.p": "Explore a hand-crafted map, push through harder eras, solve puzzles, read lore, and search for secret bosses.",
     "media.title": "Screenshots",
-    "media.sub": "Official Steam screenshots.",
-    "footer.meta": "OHJATA is developed by Paul Sardin &amp; Théo Sardin."
+    "footer.meta": "Last updated June 24, 2026 · Ohjata is developed and published by sardin-ventures.",
+    "_hidden": [
+      "features.sub",
+      "media.sub"
+    ]
   }
 }
