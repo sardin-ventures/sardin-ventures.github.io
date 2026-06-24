@@ -1,6 +1,6 @@
 # RUNZ Press Copy
 
-Last updated: June 22, 2026
+Last updated: June 24, 2026
 
 ## Quick Facts
 
@@ -42,7 +42,7 @@ RUNZ is a top-down roguelite arena shooter where every bullet in your magazine m
 
 ## Short Description
 
-Blast through escalating waves, earn money, reroll the shop, combine 3-of-a-kind bullets, and turn your magazine into a ridiculous combo engine.
+Blast through escalating waves of enemies and build the best magazine ever created. Collect cash, survive, then hit the shop between rounds to buy bullets and rebuild your magazine into a ridiculous combo engine. Stack synergies, upgrade your bullets, and snowball into a screen-filling bullet storm.
 
 ## Long Description
 
@@ -59,10 +59,6 @@ The hook is direct: your magazine is the build. Every slot changes what fires ne
 - Equipped mods that reshape how a run plays
 - Over 70 bullets with different stats, tags, and effects
 - Public demo available on Steam, with prototype builds on itch.io
-
-## Creator Permission
-
-Creators may stream, record, clip, review, and monetize RUNZ gameplay videos. No embargo is active unless sardin-ventures states one directly in writing. If you receive a free key or early build, please disclose that connection according to your platform and local rules.
 
 ## Suggested Coverage Angles
 

@@ -105,16 +105,12 @@
     "downloads.kit.li.0": "High-resolution PNG screenshots",
     "downloads.kit.li.1": "RUNZ icon and splash image",
     "downloads.kit.li.2": "Steam, itch.io, Discord, YouTube, and TikTok links",
-    "downloads.kit.li.3": "Copy-paste pitch, facts, and creator permission",
+    "downloads.kit.li.3": "Copy-paste pitch, facts, and Steam page links",
     "downloads.copy.0.label": "One Sentence",
     "downloads.copy.0.text": "RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters.",
     "downloads.copy.1.label": "Short Description",
-    "downloads.copy.1.text": "Blast through escalating waves, earn money, reroll the shop, combine 3-of-a-kind bullets,.",
-    "downloads.copy.2.label": "Genre Line",
-    "downloads.copy.2.text": "Top-down roguelite arena shooter with shop and economy driven magazine builds and synergy building.",
-    "downloads.copy.3.label": "Creator Permission",
-    "downloads.copy.3.text": "Creators may stream, record, clip, review, and monetize RUNZ gameplay videos.",
-    "footer.meta": "Last updated June 22, 2026 · RUNZ is developed and published by sardin-ventures."
+    "downloads.copy.1.text": "Blast through escalating waves of enemies and build the best magazine ever created. Collect cash, survive, then hit the shop between rounds to buy bullets and rebuild your magazine into a ridiculous combo engine. Stack synergies, upgrade your bullets, and snowball into a screen-filling bullet storm.",
+    "footer.meta": "Last updated June 24, 2026 · RUNZ is developed and published by sardin-ventures."
   },
   "ohjata": {
     "brand": "srdnvntrz",
