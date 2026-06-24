@@ -6,6 +6,8 @@
  *
  *   { "home": { "hero.eyebrow": "…", … }, "runz": { … }, "ohjata": { … } }
  *
+ * A page can also carry `_hidden: ["key"]`; those elements are removed.
+ *
  * This script fetches that file and overwrites the matching elements. The
  * inline HTML is the default copy, so the site renders correctly even when
  * content.json is missing or fails to load — content.json is a pure override
@@ -26,6 +28,14 @@
   var page = document.body && document.body.getAttribute("data-page");
   if (!page) return;
 
+  function isHidden(pageData, key) {
+    var hidden = pageData._hidden || [];
+    for (var i = 0; i < hidden.length; i++) {
+      if (hidden[i] === key) return true;
+    }
+    return false;
+  }
+
   // Cache-bust so edits show up without a hard refresh, but let the browser
   // reuse within a session.
   fetch("/content.json?v=" + Date.now(), { cache: "no-cache" })
@@ -40,6 +50,10 @@
       for (var i = 0; i < nodes.length; i++) {
         var el = nodes[i];
         var key = el.getAttribute("data-edit");
+        if (isHidden(pageData, key) || pageData[key] === null) {
+          if (el.parentNode) el.parentNode.removeChild(el);
+          continue;
+        }
         if (Object.prototype.hasOwnProperty.call(pageData, key)) {
           el.innerHTML = pageData[key];
         }
