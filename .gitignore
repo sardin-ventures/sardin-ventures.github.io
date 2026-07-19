@@ -11,6 +11,7 @@
 /editor/
 /.agents/
 /.claude/
+/tools/pitch-editor/.backups/
 
 # OS cruft
 .DS_Store

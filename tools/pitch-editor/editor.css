@@ -1,0 +1,304 @@
+:root {
+  color-scheme: dark;
+  --bg: #090b14;
+  --panel: #111525;
+  --panel-2: #171c30;
+  --line: #2a3150;
+  --text: #f4f6ff;
+  --muted: #9ca6c8;
+  --cyan: #4de7ff;
+  --cyan-dark: #153d4b;
+  --pink: #ff4f9a;
+  --danger: #ff6b72;
+  --danger-dark: #4b1c25;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button, input, textarea { font: inherit; }
+
+button { color: inherit; }
+
+.topbar {
+  height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(9, 11, 20, 0.96);
+}
+
+.brand, .topbar-actions, .section-heading, .dialog-actions {
+  display: flex;
+  align-items: center;
+}
+
+.brand { gap: 12px; }
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 2px solid var(--cyan);
+  color: var(--cyan);
+  font-size: 19px;
+  font-weight: 900;
+  box-shadow: 4px 4px 0 var(--pink);
+}
+
+h1, h2, p { margin-top: 0; }
+
+.brand h1 {
+  margin-bottom: 2px;
+  font-size: 17px;
+  letter-spacing: 0.01em;
+}
+
+.brand p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.topbar-actions { gap: 10px; }
+
+.save-state {
+  min-width: 120px;
+  margin-right: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}
+
+.save-state.dirty { color: #ffd36a; }
+.save-state.saved { color: #69efad; }
+.save-state.error { color: var(--danger); }
+
+.button {
+  min-height: 36px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel-2);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 750;
+  transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--cyan);
+  transform: translateY(-1px);
+}
+
+.button:focus-visible, a:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}
+
+.button.primary {
+  border-color: var(--cyan);
+  background: var(--cyan);
+  color: #041015;
+}
+
+.button.primary:hover:not(:disabled) { background: #8af1ff; }
+
+.button.danger {
+  border-color: #713241;
+  background: var(--danger-dark);
+  color: #ffb4b8;
+}
+
+.button.danger:hover:not(:disabled) {
+  border-color: var(--danger);
+  background: #602632;
+}
+
+.workspace {
+  height: calc(100vh - 76px);
+  display: grid;
+  grid-template-columns: 310px minmax(0, 1fr);
+}
+
+.sidebar {
+  overflow-y: auto;
+  padding: 14px;
+  border-right: 1px solid var(--line);
+  background: #0c0f1b;
+}
+
+.sidebar section {
+  margin-bottom: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.eyebrow {
+  margin-bottom: 9px;
+  color: var(--cyan);
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.help-card ol {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+kbd {
+  padding: 1px 4px;
+  border: 1px solid var(--line);
+  border-bottom-width: 2px;
+  border-radius: 3px;
+  background: #090b14;
+  color: var(--text);
+  font-size: 10px;
+}
+
+.section-heading { justify-content: space-between; gap: 8px; }
+
+.selection-type {
+  overflow: hidden;
+  max-width: 118px;
+  color: var(--muted);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.selection-card h2 {
+  margin-bottom: 7px;
+  font-size: 14px;
+}
+
+.selection-preview {
+  overflow: hidden;
+  margin-bottom: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.selection-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.selection-actions .danger { grid-column: 1 / -1; }
+
+.section-list { display: grid; gap: 5px; }
+
+.section-link {
+  width: 100%;
+  padding: 7px 8px;
+  border: 0;
+  border-left: 2px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 11px;
+  text-align: left;
+}
+
+.section-link:hover, .section-link.active {
+  border-left-color: var(--cyan);
+  background: var(--cyan-dark);
+  color: var(--text);
+}
+
+.file-card p:not(.eyebrow) {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+code {
+  color: #d8ddf1;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+
+a { color: var(--cyan); font-size: 11px; }
+
+.preview-shell {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: 34px minmax(0, 1fr);
+  background: #070910;
+}
+
+.preview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.preview-tip { color: var(--cyan); }
+
+#pitch-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #090b14;
+}
+
+dialog {
+  width: min(440px, calc(100vw - 32px));
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.65);
+}
+
+dialog::backdrop { background: rgba(0, 0, 0, 0.72); }
+dialog h2 { margin-bottom: 8px; font-size: 18px; }
+dialog p:not(.eyebrow) { color: var(--muted); font-size: 13px; }
+.dialog-actions { justify-content: flex-end; gap: 8px; margin-top: 20px; }
+
+@media (max-width: 820px) {
+  .workspace { grid-template-columns: 245px minmax(0, 1fr); }
+  .sidebar { padding: 9px; }
+  .topbar { padding-inline: 10px; }
+  .brand p, .save-state { display: none; }
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RUNZ Pitch Editor</title>
+    <link rel="stylesheet" href="/editor.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <div>
+          <h1>RUNZ Pitch Editor</h1>
+          <p>Edit the publisher pitch directly in the page.</p>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <span class="save-state" id="save-state" role="status">Loading pitch…</span>
+        <button class="button secondary" id="reload-button" type="button">Reload</button>
+        <button class="button primary" id="save-button" type="button" disabled>Save pitch</button>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="sidebar" aria-label="Pitch editor controls">
+        <section class="help-card">
+          <p class="eyebrow">How to edit</p>
+          <ol>
+            <li>Click any outlined text in the preview.</li>
+            <li>Type directly into the page.</li>
+            <li>Use the controls below to add or delete text.</li>
+            <li>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save.</li>
+          </ol>
+        </section>
+
+        <section class="selection-card" aria-labelledby="selection-title">
+          <div class="section-heading">
+            <p class="eyebrow">Selected text</p>
+            <span class="selection-type" id="selection-type">None</span>
+          </div>
+          <h2 id="selection-title">Choose text in the preview</h2>
+          <p class="selection-preview" id="selection-preview">The selected block and its editing controls will appear here.</p>
+          <div class="selection-actions">
+            <button class="button secondary" id="add-button" type="button" disabled>Add text after</button>
+            <button class="button secondary" id="duplicate-button" type="button" disabled>Duplicate block</button>
+            <button class="button danger" id="delete-button" type="button" disabled>Delete</button>
+          </div>
+        </section>
+
+        <section class="sections-card" aria-labelledby="sections-title">
+          <p class="eyebrow" id="sections-title">Jump to section</p>
+          <nav class="section-list" id="section-list"></nav>
+        </section>
+
+        <section class="file-card">
+          <p class="eyebrow">Saving</p>
+          <p>Saves overwrite <code>runz/pitch/index.html</code>. A local backup is created before every save.</p>
+          <a href="/pitch" target="_blank" rel="noopener">Open clean preview ↗</a>
+        </section>
+      </aside>
+
+      <section class="preview-shell" aria-label="Editable pitch preview">
+        <div class="preview-toolbar">
+          <span>Live preview</span>
+          <span class="preview-tip">Outlined text is editable</span>
+        </div>
+        <iframe id="pitch-frame" title="RUNZ publisher pitch preview"></iframe>
+      </section>
+    </main>
+
+    <dialog id="confirm-dialog">
+      <form method="dialog">
+        <p class="eyebrow">Unsaved changes</p>
+        <h2>Reload from disk?</h2>
+        <p>Your unsaved edits will be discarded.</p>
+        <div class="dialog-actions">
+          <button class="button secondary" value="cancel">Keep editing</button>
+          <button class="button danger" value="confirm">Discard and reload</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="/editor.js" defer></script>
+  </body>
+</html>
