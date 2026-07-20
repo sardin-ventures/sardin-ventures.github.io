@@ -94,6 +94,20 @@
     }
   }
 
+  // Solid silhouette (interior holes filled). Used only to clip the eye so it
+  // stays inside the body outline; a ring keeps its hole filled so its eye can
+  // still sit in the centre.
+  function solidInside(px, py, r, shape) {
+    switch (shape) {
+      case 4: return px * px + py * py <= r * r;
+      case 5: {
+        var ax = Math.abs(px), ay = Math.abs(py);
+        return ax / (r * 1.15) + ay / (r * 0.95) <= 1.0;
+      }
+      default: return inside(px, py, r, shape);
+    }
+  }
+
   function fillBody(g, origin, ext, r, shape, color, rng, angle) {
     var ca = Math.cos(-angle), sa = Math.sin(-angle);
     g.fillStyle = color;
@@ -149,19 +163,30 @@
     sg.fillStyle = SCLERA;
     var srng = rngFrom((seed ^ 0x51) >>> 0);
     var R = Math.ceil(socketR);
+    // Clip the sclera to the body outline (narrow shapes like the triangle
+    // otherwise overflow) and remember where it landed so the pupil can be
+    // clipped to it too.
+    var eca = Math.cos(-angle), esa = Math.sin(-angle);
+    var socketMask = new Uint8Array(size * size);
     for (var sx = -R; sx <= R; sx++) {
       for (var sy = -R; sy <= R; sy++) {
         var dist = Math.sqrt(sx * sx + sy * sy);
         if (dist > socketR + 0.2) continue;
         if (dist > socketR - 0.85 && srng() < CHIP) continue;
-        sg.fillRect(Math.round(eyeX + sx), Math.round(eyeY + sy), 1, 1);
+        var epx = eyeX + sx, epy = eyeY + sy;
+        var elx = (epx - origin) * eca - (epy - origin) * esa;
+        var ely = (epx - origin) * esa + (epy - origin) * eca;
+        if (!solidInside(elx, ely, r, def.shape)) continue;
+        var eix = Math.round(epx), eiy = Math.round(epy);
+        sg.fillRect(eix, eiy, 1, 1);
+        if (eix >= 0 && eiy >= 0 && eix < size && eiy < size) socketMask[eiy * size + eix] = 1;
       }
     }
 
     var pupilSide = Math.max(2, Math.round(socketR * 0.5));
     var travel = Math.max(0.7, socketR * 0.42);
     return {
-      bodyFrames: bodyFrames, socket: sc, size: size,
+      bodyFrames: bodyFrames, socket: sc, size: size, socketMask: socketMask,
       eyeX: eyeX, eyeY: eyeY, socketR: socketR, pupilSide: pupilSide, travel: travel
     };
   }
@@ -223,7 +248,16 @@
     } else {
       ctx.drawImage(b.socket, 0, 0);
       ctx.fillStyle = BLACK;
-      ctx.fillRect(Math.round(b.eyeX + ox - b.pupilSide / 2), Math.round(b.eyeY + oy - b.pupilSide / 2), b.pupilSide, b.pupilSide);
+      // pupil clipped to the sclera so it can't drift past the eye (or body)
+      var pMinX = Math.round(b.eyeX + ox - b.pupilSide / 2);
+      var pMinY = Math.round(b.eyeY + oy - b.pupilSide / 2);
+      for (var qy = 0; qy < b.pupilSide; qy++) {
+        for (var qx = 0; qx < b.pupilSide; qx++) {
+          var qX = pMinX + qx, qY = pMinY + qy;
+          if (qX < 0 || qY < 0 || qX >= b.size || qY >= b.size) continue;
+          if (b.socketMask[qY * b.size + qX]) ctx.fillRect(qX, qY, 1, 1);
+        }
+      }
     }
   }
 
