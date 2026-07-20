@@ -111,17 +111,18 @@
   function fillBody(g, origin, ext, r, shape, color, rng, angle) {
     var ca = Math.cos(-angle), sa = Math.sin(-angle);
     g.fillStyle = color;
-    for (var x = -ext; x < ext; x += 1) {
-      for (var y = -ext; y < ext; y += 1) {
-        var cxp = x + 0.5, cyp = y + 0.5;
-        var lx = cxp * ca - cyp * sa, ly = cxp * sa + cyp * ca;
+    // integer offsets on both axes (matching the socket) so the silhouette is
+    // centred on the origin pixel and stays co-centred with the eye
+    for (var x = -ext; x <= ext; x += 1) {
+      for (var y = -ext; y <= ext; y += 1) {
+        var lx = x * ca - y * sa, ly = x * sa + y * ca;
         var full = inside(lx, ly, r, shape);
         var core = inside(lx, ly, r * CORE, shape);
         var roll = rng();
         var f = false;
         if (full) { if (core || roll > EDGE_DROP) f = true; }
         else if (roll < STRAY && inside(lx, ly, r * STRAY_REACH, shape)) f = true;
-        if (f) g.fillRect(Math.round(origin + x), Math.round(origin + y), 1, 1);
+        if (f) g.fillRect(origin + x, origin + y, 1, 1);
       }
     }
   }
@@ -134,9 +135,11 @@
 
   function bake(def, seed, angle) {
     var r = Math.max(3, def.r / CHUNK);
-    var ext = r * STRAY_REACH + 2;
-    var size = Math.ceil(ext * 2) + 4;
-    var origin = size / 2;
+    // integer half-extent + odd size so the shape rasterises symmetrically
+    // around the centre pixel (origin), keeping the body co-centred with the eye
+    var ext = Math.ceil(r * STRAY_REACH + 2);
+    var size = ext * 2 + 1;
+    var origin = ext;
     var col = "rgb(" + def.color.join(",") + ")";
 
     // eye centred on the shape's visual centre (triangles/rockets are front-heavy)
