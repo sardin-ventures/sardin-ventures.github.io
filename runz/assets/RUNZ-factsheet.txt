@@ -1,5 +1,5 @@
 RUNZ FACTSHEET
-Last updated: June 24, 2026
+Last updated: July 20, 2026
 
 Game: RUNZ
 Developer: sardin-ventures
@@ -17,7 +17,8 @@ YouTube: https://www.youtube.com/@sardin-ventures/featured
 TikTok: https://www.tiktok.com/@sardinventures
 Discord: https://discord.gg/5Zy9YzUEvS
 
-Press contact: TODO - add a direct public email before sending outreach.
+Press kit: https://sardin-ventures.github.io/runz/
+Press contact: sardin-ventures@gmail.com
 
 One-sentence pitch:
 RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters.

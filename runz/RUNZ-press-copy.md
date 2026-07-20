@@ -1,6 +1,6 @@
 # RUNZ Press Copy
 
-Last updated: June 24, 2026
+Last updated: July 20, 2026
 
 ## Quick Facts
 
@@ -32,9 +32,9 @@ TikTok: https://www.tiktok.com/@sardinventures
 
 Discord: https://discord.gg/5Zy9YzUEvS
 
-Press kit page: docs/index.html in this repo, or the published site URL after GitHub Pages deploy.
+Press kit page: https://sardin-ventures.github.io/runz/
 
-Press contact: TODO - add a direct public email before sending outreach.
+Press contact: sardin-ventures@gmail.com
 
 ## One-Sentence Pitch
 
@@ -80,8 +80,8 @@ Hi [Name],
 I am sending RUNZ for possible coverage on [Outlet/Channel]. RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters: survive a wave, spend cash in the shop, combine 3-of-a-kind bullets, and stack tag synergies until the build becomes a screen-filling combo engine.
 
 Steam demo: https://store.steampowered.com/app/4704420/runz/
-Press kit: [published press-kit URL]
-Trailer/gameplay clip: [direct MP4 or YouTube URL]
+Press kit: https://sardin-ventures.github.io/runz/
+Trailer/gameplay clip: https://sardin-ventures.github.io/runz/assets/indie-x/2026/runz-gameplay-reel-14s.mp4
 Key: [Steam key, if relevant]
 
 Creators may stream, record, clip, review, and monetize gameplay. No embargo is active unless we say so directly in writing.
@@ -97,11 +97,10 @@ Thanks,
 - Icon: docs/assets/runz-icon.png
 - Splash image: docs/assets/runz-splash.png
 - Demo badge: docs/assets/demo-badge.png
+- Festival application page: https://sardin-ventures.github.io/runz/indie-x/
+- Festival media pack: https://sardin-ventures.github.io/runz/assets/indie-x/2026/runz-indie-x-media-pack.zip
 
 ## Before Sending
 
-- Add a direct public press email.
-- Publish the press kit to a shareable URL.
-- Add a direct downloadable MP4 gameplay clip or trailer.
-- Replace `[published press-kit URL]`, `[direct MP4 or YouTube URL]`, `[Steam key, if relevant]`, and `[Name]` in the outreach draft.
+- Replace `[Steam key, if relevant]` and `[Name]` in the outreach draft.
 - If sending to streamers, include a Steam key directly in the email when possible.
