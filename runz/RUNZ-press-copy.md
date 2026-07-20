@@ -81,7 +81,7 @@ I am sending RUNZ for possible coverage on [Outlet/Channel]. RUNZ is a top-down 
 
 Steam demo: https://store.steampowered.com/app/4704420/runz/
 Press kit: https://sardin-ventures.github.io/runz/
-Trailer/gameplay clip: https://sardin-ventures.github.io/runz/assets/indie-x/2026/runz-gameplay-reel-14s.mp4
+Trailer/gameplay: https://www.youtube.com/@sardin-ventures
 Key: [Steam key, if relevant]
 
 Creators may stream, record, clip, review, and monetize gameplay. No embargo is active unless we say so directly in writing.
@@ -97,8 +97,6 @@ Thanks,
 - Icon: docs/assets/runz-icon.png
 - Splash image: docs/assets/runz-splash.png
 - Demo badge: docs/assets/demo-badge.png
-- Festival application page: https://sardin-ventures.github.io/runz/indie-x/
-- Festival media pack: https://sardin-ventures.github.io/runz/assets/indie-x/2026/runz-indie-x-media-pack.zip
 
 ## Before Sending
 
