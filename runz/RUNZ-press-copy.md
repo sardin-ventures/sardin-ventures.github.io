@@ -1,6 +1,6 @@
 # RUNZ Press Copy
 
-Last updated: July 20, 2026
+Last updated: October 1, 2026
 
 ## Quick Facts
 
@@ -14,9 +14,9 @@ Genre: Top-down roguelite arena shooter
 
 Players: Single-player
 
-Engine: Godot 4.6.2
+Engine: Godot 4.6.3
 
-Status: Public demo available. Full game coming soon.
+Status: Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026). Full game coming soon.
 
 Platforms: Steam demo for Windows, macOS, and Linux. itch.io builds for HTML5, Windows, macOS, and Linux.
 
@@ -52,13 +52,15 @@ The hook is direct: your magazine is the build. Every slot changes what fires ne
 
 ## Feature Bullets
 
-- Fast top-down arena survival
+- Fast top-down arena survival: 20 rounds, then a boss
 - Shop-driven magazine building between waves
-- 3-of-a-kind bullet star upgrades
-- Tag synergies inspired by TFT and SNKRX
-- Equipped mods that reshape how a run plays
-- Over 70 bullets with different stats, tags, and effects
-- Public demo available on Steam, with prototype builds on itch.io
+- 90 bullets, 23 synergies and 89 mods
+- 3-of-a-kind star upgrades, each merge with its own upgrade choice
+- Tag synergies inspired by TFT and SNKRX, plus slot enchants
+- 7 characters, each with its own magazine and rule
+- 5 Depth difficulty tiers, each ending on its own boss, plus an endless mode
+- 43 achievements that unlock characters, bullets, mods and deeper Depths
+- Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026)
 
 ## Suggested Coverage Angles
 
@@ -77,7 +79,7 @@ Subject: RUNZ - top-down roguelite shooter demo for coverage
 
 Hi [Name],
 
-I am sending RUNZ for possible coverage on [Outlet/Channel]. RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters: survive a wave, spend cash in the shop, combine 3-of-a-kind bullets, and stack tag synergies until the build becomes a screen-filling combo engine.
+I am sending RUNZ for possible coverage on [Outlet/Channel]. Its free demo is in Steam Next Fest (Oct 19-26). RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters: survive a wave, spend cash in the shop, combine 3-of-a-kind bullets, and stack tag synergies until the build becomes a screen-filling combo engine.
 
 Steam demo: https://store.steampowered.com/app/4704420/runz/
 Press kit: https://sardin-ventures.github.io/runz/
