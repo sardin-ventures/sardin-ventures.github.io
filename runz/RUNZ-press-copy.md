@@ -18,13 +18,12 @@ Engine: Godot 4.6.3
 
 Status: Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026). Full game coming soon.
 
-Platforms: Steam demo for Windows, macOS, and Linux. itch.io builds for HTML5, Windows, macOS, and Linux.
+Platforms: Steam demo for Windows, macOS, and Linux.
 
 Price: Demo free. Full-game price TBA.
 
 Steam: https://store.steampowered.com/app/4704420/runz/
 
-itch.io: https://srdnvntrz.itch.io/runz
 
 YouTube: https://www.youtube.com/@sardin-ventures/featured
 
@@ -71,7 +70,7 @@ The hook is direct: your magazine is the build. Every slot changes what fires ne
 
 ## Submission Blurb
 
-RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters. Players survive escalating waves, collect cash, then rebuild their magazine in the shop with new bullets, 3-of-a-kind upgrades, equipped mods, and tag synergies. The public demo is available on Steam, with prototype builds also available on itch.io.
+RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters. Players survive escalating waves, collect cash, then rebuild their magazine in the shop with new bullets, 3-of-a-kind upgrades, equipped mods, and tag synergies. The public demo is available on Steam.
 
 ## Outreach Email Draft
 
