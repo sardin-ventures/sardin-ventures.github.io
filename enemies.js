@@ -4,7 +4,10 @@
    dark square pupil. The body edge BOILS (a few pre-baked frames cycled at the
    game's ~6 Hz shimmer), the eye occasionally BLINKS, and the pupil snaps
    toward the cursor in 32 directional buckets. Decorative hosts: aria-hidden +
-   pointer-events:none. Hidden on mobile (no pointer). Honours reduced-motion. */
+   pointer-events:none. Without a mouse (touch screens) the eyes follow the
+   last touch, then drift around on their own. On narrow screens a host shows
+   only if it carries data-m="<inline style>" (its phone placement); desktop
+   placements land on the copy there. Honours reduced-motion. */
 (function () {
   "use strict";
 
@@ -142,8 +145,9 @@
     var origin = ext;
     var col = "rgb(" + def.color.join(",") + ")";
 
-    // eye centred on the shape's visual centre (triangles/rockets are front-heavy)
-    var exl = def.shape === 1 ? 0.2 * r : def.shape === 7 ? 0.1 * r : 0;
+    // eye centred where the shape is widest: a triangle's incircle sits behind
+    // its centre (pushing it forward clipped the socket and hid the pupil)
+    var exl = def.shape === 1 ? -0.16 * r : def.shape === 7 ? 0.1 * r : 0;
     var eyeX = origin + exl * Math.cos(angle);
     var eyeY = origin + exl * Math.sin(angle);
 
@@ -159,6 +163,7 @@
     var socketDiam;
     if (def.shape === 4) socketDiam = clamp(Math.round(r * 1.15), 5, 18);
     else if (def.shape === 3) socketDiam = clamp(Math.round(r * 0.95), 5, 14);
+    else if (def.shape === 1) socketDiam = clamp(Math.round(r * 0.85), 5, 18);
     else socketDiam = clamp(Math.round(r * 1.1), 5, 18);
     var socketR = socketDiam / 2;
     var sc = newCanvas(size);
@@ -210,13 +215,12 @@
     var baked = bake(def, (((def.shape + 1) * 2654435761) ^ ((i + 1) * 40503)) >>> 0, angle);
 
     var view = newCanvas(baked.size);
-    view.style.width = baked.size * cell + "px";
-    view.style.height = baked.size * cell + "px";
     node.appendChild(view);
 
     hosts.push({
-      node: node, ctx: view.getContext("2d"), b: baked,
-      cx: 0, cy: 0, on: false,
+      node: node, view: view, cell: cell, ctx: view.getContext("2d"), b: baked,
+      desk: node.getAttribute("style") || "", mob: node.getAttribute("data-m"),
+      cx: 0, cy: 0, on: false, drawn: "",
       nextBlink: 1500 + (i % 6) * 900 + (i * 617 % 2500),
       blinkUntil: 0
     });
@@ -225,14 +229,34 @@
 
   var px = window.innerWidth / 2;
   var py = window.innerHeight * 0.42;
+  // time of the last real pointer/touch input; after IDLE_MS without one the
+  // gaze target wanders so touch screens (no hover) still see the eyes move
+  var lastInput = -Infinity;
+  var IDLE_MS = 2500;
+  var hoverless = window.matchMedia && window.matchMedia("(hover: none)").matches;
 
-  // cache each host's screen-centre; recompute on scroll/resize (not per frame)
+  // phone placement + smaller creatures on narrow screens
+  function sizeHosts() {
+    var narrow = window.innerWidth <= 620;
+    var scale = narrow ? 0.6 : 1;
+    for (var i = 0; i < hosts.length; i++) {
+      var h = hosts[i], px2 = h.b.size * Math.max(2, h.cell * scale);
+      h.node.setAttribute("style", narrow ? (h.mob === null ? "display:none" : h.mob) : h.desk);
+      h.view.style.width = px2 + "px";
+      h.view.style.height = px2 + "px";
+    }
+  }
+
+  // Re-measured every frame: fonts, content.json copy and lazy images move the
+  // hosts after load, and a centre cached at load made the eyes look the wrong
+  // way. A handful of rect reads per frame is cheap (nothing here writes layout).
   function recalcCenters() {
+    var vh = window.innerHeight;
     for (var i = 0; i < hosts.length; i++) {
       var r = hosts[i].node.getBoundingClientRect();
       hosts[i].cx = r.left + r.width / 2;
       hosts[i].cy = r.top + r.height / 2;
-      hosts[i].on = r.width > 0;
+      hosts[i].on = r.width > 0 && r.bottom > 0 && r.top < vh;
     }
   }
 
@@ -242,6 +266,9 @@
     var ang = Math.round(Math.atan2(py - h.cy, px - h.cx) / STEP) * STEP;
     var ox = Math.round(Math.cos(ang) * b.travel);
     var oy = Math.round(Math.sin(ang) * b.travel);
+    var key = frameIdx + "|" + (blinking ? 1 : 0) + "|" + ox + "|" + oy;
+    if (key === h.drawn) return;
+    h.drawn = key;
     var ctx = h.ctx;
     ctx.clearRect(0, 0, b.size, b.size);
     ctx.drawImage(b.bodyFrames[frameIdx], 0, 0);
@@ -265,7 +292,15 @@
   }
 
   // render every frame so the pupil always follows the cursor (no button needed)
+  function wander(now) {
+    var t = now / 1000;
+    px = window.innerWidth * (0.5 + 0.42 * Math.sin(t * 0.37));
+    py = window.innerHeight * (0.45 + 0.38 * Math.sin(t * 0.53 + 1.3));
+  }
+
   function frame(now) {
+    if (!reduced && hoverless && now - lastInput > IDLE_MS) wander(now);
+    recalcCenters();
     var fi = reduced ? 0 : Math.floor(now / BOIL_MS) % FRAMES;
     for (var i = 0; i < hosts.length; i++) {
       var h = hosts[i];
@@ -279,12 +314,13 @@
     window.requestAnimationFrame(frame);
   }
 
-  function onMove(x, y) { px = x; py = y; }
-  window.addEventListener("mousemove", function (e) { onMove(e.clientX, e.clientY); }, { passive: true });
+  function onMove(x, y) { px = x; py = y; lastInput = performance.now(); }
+  function onTouch(e) { var t = e.touches && e.touches[0]; if (t) onMove(t.clientX, t.clientY); }
   window.addEventListener("pointermove", function (e) { onMove(e.clientX, e.clientY); }, { passive: true });
-  window.addEventListener("touchmove", function (e) { var t = e.touches && e.touches[0]; if (t) onMove(t.clientX, t.clientY); }, { passive: true });
-  window.addEventListener("scroll", recalcCenters, { passive: true });
-  window.addEventListener("resize", recalcCenters, { passive: true });
-  recalcCenters();
+  window.addEventListener("pointerdown", function (e) { onMove(e.clientX, e.clientY); }, { passive: true });
+  window.addEventListener("touchstart", onTouch, { passive: true });
+  window.addEventListener("touchmove", onTouch, { passive: true });
+  window.addEventListener("resize", sizeHosts, { passive: true });
+  sizeHosts();
   window.requestAnimationFrame(frame);
 })();

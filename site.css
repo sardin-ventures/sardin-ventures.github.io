@@ -1051,10 +1051,6 @@ h2 {
     gap: 10px 16px;
   }
 
-  .enemy {
-    display: none;
-  }
-
   .hero-inner {
     padding-top: 96px;
   }
