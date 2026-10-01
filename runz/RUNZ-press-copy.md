@@ -94,7 +94,7 @@ Thanks,
 ## Asset Inventory
 
 - Screenshot gallery: https://sardin-ventures.github.io/runz/#media
-- Creator kit ZIP (8 screenshots as 1920x1080 PNG, icon, splash, demo badge, press copy, factsheet): https://sardin-ventures.github.io/runz/assets/RUNZ-creator-kit.zip
+- Creator kit ZIP (14 screenshots as 1920x1080 PNG, icon, splash, demo badge, press copy, factsheet): https://sardin-ventures.github.io/runz/assets/RUNZ-creator-kit.zip
 - Factsheet TXT: https://sardin-ventures.github.io/runz/assets/RUNZ-factsheet.txt
 
 ## Before Sending
