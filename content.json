@@ -77,8 +77,6 @@
     "facts.spec.15.dt": "Press Copy",
     "facts.spec.15.dd": "<a href=\"/runz/RUNZ-press-copy.md\">RUNZ-press-copy.md</a>",
     "media.title": "Screenshots",
-    "media.group.0": "In the arena",
-    "media.group.1": "Between rounds",
     "creators.title": "Creator Notes",
     "creators.col.0.h": "Coverage",
     "creators.col.0.p0": "Creators may stream, record, clip, review, and monetize RUNZ gameplay videos.",
@@ -106,6 +104,8 @@
     "overview.feature.6": "43 achievements that unlock characters, bullets, mods and deeper Depths",
     "facts.spec.16.dt": "Languages",
     "facts.spec.16.dd": "English and French. Spanish and Brazilian Portuguese in progress.",
+    "media.group.0": "In the arena",
+    "media.group.1": "Between rounds",
     "_hidden": [
       "overview.p2",
       "facts.sub",

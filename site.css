@@ -541,6 +541,7 @@ h2 {
 .media-card {
   display: flex;
   flex-direction: column;
+  margin: 0;
   overflow: hidden;
   border: 1px solid var(--line-2);
   background: var(--bg-2);
@@ -580,10 +581,11 @@ h2 {
 
 .media-card figcaption {
   flex: 1 1 auto;
-  padding: 12px 14px;
+  padding: 10px 14px;
   border-top: 1px solid var(--line);
   color: var(--muted);
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.4;
 }
 
 /* ------------------------------------------------------------
@@ -945,11 +947,60 @@ h2 {
   display: grid;
 }
 
+.lightbox-figure {
+  display: grid;
+  justify-items: center;
+  gap: 12px;
+  margin: 0;
+}
+
 .lightbox img {
-  max-width: 94vw;
-  max-height: 86vh;
+  max-width: min(94vw, 1600px);
+  max-height: 80vh;
   border: 1px solid var(--line-2);
   box-shadow: 0 24px 90px rgba(0, 0, 0, 0.65);
+}
+
+.lightbox-caption {
+  max-width: 70ch;
+  color: var(--ink);
+  font-size: 14px;
+  text-align: center;
+}
+
+.lightbox-nav {
+  position: fixed;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  margin-top: -22px;
+  border: 1px solid var(--line-2);
+  background: rgba(12, 11, 13, 0.82);
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+
+.lightbox-nav:hover,
+.lightbox-nav:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.lightbox-nav[hidden] {
+  display: none;
+}
+
+.lightbox-prev {
+  left: clamp(8px, 2vw, 24px);
+}
+
+.lightbox-next {
+  right: clamp(8px, 2vw, 24px);
 }
 
 .lightbox-hint {
