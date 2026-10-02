@@ -41,13 +41,17 @@ RUNZ is a top-down roguelite arena shooter where every bullet in your magazine m
 
 ## Short Description
 
-Blast through escalating waves of enemies and build the best magazine ever created. Collect cash, survive, then hit the shop between rounds to buy bullets and rebuild your magazine into a ridiculous combo engine. Stack synergies, upgrade your bullets, and snowball into a screen-filling bullet storm.
+RUNZ is a top-down arena shooter where you draft your bullets like an auto-battler. Between waves you roll the shop, buy three copies of a bullet to star it up, chase synergies and choose the order your magazine fires in. Then you survive with what you built.
 
 ## Long Description
 
-RUNZ is a top-down roguelite arena shooter built around readable bullet composition. Between timed combat rounds, players rebuild a magazine from shop bullets, 3-of-a-kind star upgrades, and equipped mods, then test that build against denser waves.
+RUNZ is a top-down arena shooter, but most of the decisions happen in the shop. Waves last a minute at most. When one ends you get a shop full of random bullets, the way an auto-battler hands you random units, and you decide what to buy, what to sell and when to reroll.
 
-The hook is direct: your magazine is the build. Every slot changes what fires next, which synergies activate, and how the run survives. A run starts small, then snowballs through shop rerolls, bullet merges, tag synergies, and mod rules that can make the screen spiral out of control.
+Three copies of the same bullet merge into a 2★ version, and three 2★ make a 3★. Each star-up lets you pick one of a few upgrades for that bullet, so two players with the same 3★ bullet can end up with very different ones. Bullets also carry tags like Burn, Chrono or Bounce. Collect enough different bullets with the same tag and that synergy turns on.
+
+The magazine fires each bullet in order before it reloads, so carefully manage the order of your bullets. Mods, slot enchants and seven characters bend the rules further.
+
+A run is twenty waves and a boss. You start with three slots and basic bullets. If you're a good enough drafter (it might take practice!) you'll end up melting enemies and bosses alike.
 
 ## Feature Bullets
 
