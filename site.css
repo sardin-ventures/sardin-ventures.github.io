@@ -182,18 +182,18 @@ h3,
 }
 
 .brand img {
-  width: 26px;
-  height: 35px;
+  width: 30px;
+  height: 42px;
   object-fit: contain;
-  image-rendering: pixelated;
+  image-rendering: auto;
 }
 
 .brand span {
-  font-family: var(--body);
-  font-size: 19px;
+  font-family: var(--display);
+  font-size: 11px;
   line-height: 1;
-  letter-spacing: 0.02em;
-  color: var(--accent);
+  letter-spacing: 0.08em;
+  color: var(--ink);
 }
 
 .nav-links {
@@ -739,16 +739,18 @@ h2 {
 }
 
 .footer-brand img {
-  width: 28px;
-  height: 38px;
+  width: 30px;
+  height: 42px;
   object-fit: contain;
-  image-rendering: pixelated;
+  image-rendering: auto;
 }
 
 .footer-brand span {
-  font-size: 18px;
+  font-family: var(--display);
+  font-size: 10px;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
+  color: var(--ink);
 }
 
 /* ============================================================
