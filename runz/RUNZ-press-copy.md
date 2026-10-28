@@ -1,6 +1,6 @@
 # RUNZ Press Copy
 
-Last updated: October 1, 2026
+Last updated: October 28, 2026
 
 ## Quick Facts
 
@@ -16,7 +16,9 @@ Players: Single-player
 
 Engine: Godot 4.6.3
 
-Status: Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026). Full game coming soon.
+Status: Free demo on Steam now. Full game releases Q4 2026.
+
+Release: Q4 2026
 
 Platforms: Steam demo for Windows, macOS, and Linux.
 
@@ -24,6 +26,8 @@ Price: Demo free. Full-game price TBA.
 
 Steam: https://store.steampowered.com/app/4704420/runz/
 
+
+Trailer: https://www.youtube.com/watch?v=DWeAxTKSQOU
 
 YouTube: https://www.youtube.com/@sardin-ventures/featured
 
@@ -63,7 +67,7 @@ A run is twenty waves and a boss. You start with three slots and basic bullets. 
 - 7 characters, each with its own magazine and rule
 - 5 Depth difficulty tiers, each ending on its own boss, plus an endless mode
 - 43 achievements that unlock characters, bullets, mods and deeper Depths
-- Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026)
+- Free demo on Steam now; full release Q4 2026
 
 ## Suggested Coverage Angles
 
@@ -74,7 +78,7 @@ A run is twenty waves and a boss. You start with three slots and basic bullets. 
 
 ## Submission Blurb
 
-RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters. Players survive escalating waves, collect cash, then rebuild their magazine in the shop with new bullets, 3-of-a-kind upgrades, equipped mods, and tag synergies. The public demo is available on Steam.
+RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters. Players survive escalating waves, collect cash, then rebuild their magazine in the shop with new bullets, 3-of-a-kind upgrades, equipped mods, and tag synergies. The free demo is available on Steam now, and the full game releases in Q4 2026.
 
 ## Outreach Email Draft
 
@@ -82,11 +86,11 @@ Subject: RUNZ - top-down roguelite shooter demo for coverage
 
 Hi [Name],
 
-I am sending RUNZ for possible coverage on [Outlet/Channel]. Its free demo is in Steam Next Fest (Oct 19-26). RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters: survive a wave, spend cash in the shop, combine 3-of-a-kind bullets, and stack tag synergies until the build becomes a screen-filling combo engine.
+I am sending RUNZ for possible coverage on [Outlet/Channel]. Its free demo is on Steam now, and the full game releases in Q4 2026. RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters: survive a wave, spend cash in the shop, combine 3-of-a-kind bullets, and stack tag synergies until the build becomes a screen-filling combo engine.
 
 Steam demo: https://store.steampowered.com/app/4704420/runz/
 Press kit: https://sardin-ventures.github.io/runz/
-Trailer/gameplay: https://www.youtube.com/@sardin-ventures
+Trailer: https://www.youtube.com/watch?v=DWeAxTKSQOU
 Key: [Steam key, if relevant]
 
 Creators may stream, record, clip, review, and monetize gameplay. No embargo is active unless we say so directly in writing.

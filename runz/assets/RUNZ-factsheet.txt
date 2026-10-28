@@ -1,5 +1,5 @@
 RUNZ FACTSHEET
-Last updated: October 1, 2026
+Last updated: October 28, 2026
 
 Game: RUNZ
 Developer: sardin-ventures
@@ -7,11 +7,13 @@ Publisher: sardin-ventures
 Genre: Top-down roguelite arena shooter
 Players: Single-player
 Engine: Godot 4.6.3
-Status: Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026). Full game coming soon.
+Status: Free demo on Steam now. Full game releases Q4 2026.
+Release: Q4 2026
 Platforms: Steam demo for Windows, macOS, and Linux.
 Price: Demo free. Full-game price TBA.
 
 Steam: https://store.steampowered.com/app/4704420/runz/
+Trailer: https://www.youtube.com/watch?v=DWeAxTKSQOU
 YouTube: https://www.youtube.com/@sardin-ventures/featured
 TikTok: https://www.tiktok.com/@sardinventures
 Discord: https://discord.gg/5Zy9YzUEvS
@@ -43,4 +45,4 @@ Feature bullets:
 - 7 characters, each with its own magazine and rule
 - 5 Depth difficulty tiers, each ending on its own boss, plus an endless mode
 - 43 achievements that unlock characters, bullets, mods and deeper Depths
-- Free demo on Steam, playable in Steam Next Fest (Oct 19-26, 2026)
+- Free demo on Steam now; full release Q4 2026
