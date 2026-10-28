@@ -37,7 +37,7 @@ Discord: https://discord.gg/5Zy9YzUEvS
 
 Press kit page: https://sardin-ventures.github.io/runz/
 
-Press contact: sardin-ventures@gmail.com
+Press contact: sardin.ventures@gmail.com
 
 ## One-Sentence Pitch
 

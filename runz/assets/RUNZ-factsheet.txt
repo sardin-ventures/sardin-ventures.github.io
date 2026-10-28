@@ -19,7 +19,7 @@ TikTok: https://www.tiktok.com/@sardinventures
 Discord: https://discord.gg/5Zy9YzUEvS
 
 Press kit: https://sardin-ventures.github.io/runz/
-Press contact: sardin-ventures@gmail.com
+Press contact: sardin.ventures@gmail.com
 
 One-sentence pitch:
 RUNZ is a top-down roguelite arena shooter where every bullet in your magazine matters.
