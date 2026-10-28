@@ -32,17 +32,17 @@ RUNZ is a top-down arena shooter, but most of the decisions happen in the shop. 
 
 Three copies of the same bullet merge into a 2★ version, and three 2★ make a 3★. Each star-up lets you pick one of a few upgrades for that bullet, so two players with the same 3★ bullet can end up with very different ones. Bullets also carry tags like Burn, Chrono or Bounce. Collect enough different bullets with the same tag and that synergy turns on.
 
-The magazine fires each bullet in order before it reloads, so carefully manage the order of your bullets. Mods, slot enchants and seven characters bend the rules further.
+The magazine fires each bullet in order before it reloads, so carefully manage the order of your bullets. Mods, slot enchants and eight characters bend the rules further.
 
 A run is twenty waves and a boss. You start with three slots and basic bullets. If you're a good enough drafter (it might take practice!) you'll end up melting enemies and bosses alike.
 
 Feature bullets:
 - Fast top-down arena survival: 20 rounds, then a boss
 - Shop-driven magazine building between waves
-- 90 bullets, 23 synergies and 89 mods
+- 90 bullets, 23 synergies and 113 mods
 - 3-of-a-kind star upgrades, each merge with its own upgrade choice
 - Tag synergies inspired by TFT and SNKRX, plus slot enchants
-- 7 characters, each with its own magazine and rule
+- 8 characters, each with its own magazine and rule, plus a secret one
 - 5 Depth difficulty tiers, each ending on its own boss, plus an endless mode
-- 43 achievements that unlock characters, bullets, mods and deeper Depths
+- 96 achievements that unlock characters, bullets, mods and deeper Depths
 - Free demo on Steam now; full release Q4 2026
